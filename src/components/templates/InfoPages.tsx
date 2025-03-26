@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ReactNode } from "react";
 import { getChars } from "@/utils/getChars";
+import SocialsComponent from "../SocialsComponent";
 
 type InfoPagesTemplateProps = {
   children: ReactNode;
@@ -23,14 +24,21 @@ const InfoPages = ({ children, title }: InfoPagesTemplateProps) => {
           </div>
           <div className="flex flex-col ml-auto mt-24 mr-4 mb-auto md:mt-4">
             {title === "CV" && (
-              <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.4, delay: 1 }}
-                className=" text-xs px-3 py-1 border rounded-full border-black/40 "
-              >
-                Download CV
-              </motion.button>
+              <>
+                <motion.button
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.4, delay: 1 }}
+                  className=" text-xs px-3 py-1 border rounded-full border-black/40 "
+                >
+                  Download CV
+                </motion.button>
+                <SocialsComponent
+                  color="black"
+                  hasPhoneNumber={false}
+                  className="text-sm mt-4 hidden md:block"
+                />
+              </>
             )}
           </div>
         </div>

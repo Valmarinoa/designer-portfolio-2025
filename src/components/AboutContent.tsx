@@ -40,7 +40,7 @@ const AboutContent = () => {
           />
           <div className="flex gap-6 pt-3  w-full justify-between pr-3  border-b border-black/40 pb-3">
             <p className="font-semibold">Contact & Socials</p>
-            <SocialsComponent color="black" hasPhoneNumber />
+            <SocialsComponent color="black" hasPhoneNumber={false} />
           </div>
           <div className="flex gap-6 pt-3 w-full justify-between pr-3 pb-6">
             <p className="font-semibold">Languages</p>
