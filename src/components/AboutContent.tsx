@@ -48,7 +48,11 @@ const AboutContent = () => {
           <div className="flex gap-6 pt-3 w-full justify-between pr-3 pb-6">
             <p className="font-semibold">Languages</p>
             <div className="flex flex-col">
-              <MaskText phrases={languages} className={""} startDelay={1} />
+              <MaskText
+                phrases={languages}
+                className={"text-sm"}
+                startDelay={1}
+              />
             </div>
           </div>
         </div>
