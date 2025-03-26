@@ -33,13 +33,13 @@ const InfoPages = ({ children, title }: InfoPagesTemplateProps) => {
                 >
                   Download CV
                 </motion.button>
-                <SocialsComponent
-                  color="black"
-                  hasPhoneNumber={false}
-                  className="text-sm mt-4 hidden md:block"
-                />
               </>
             )}
+            <SocialsComponent
+              color="black"
+              hasPhoneNumber={false}
+              className="text-sm mt-4 hidden md:block"
+            />
           </div>
         </div>
         <Link

@@ -41,10 +41,10 @@ const AboutContent = () => {
             viewport={{ once: false, margin: "-100px" }}
             variants={mediaVariants}
           />
-          <div className="flex gap-6 pt-3  w-full justify-between pr-3  border-b border-black/40 pb-3">
+          {/* <div className="flex gap-6 pt-3  w-full justify-between pr-3  border-b border-black/40 pb-3">
             <p className="font-semibold">Contact & Socials</p>
             <SocialsComponent color="black" hasPhoneNumber={false} />
-          </div>
+          </div> */}
           <div className="flex gap-6 pt-3 w-full justify-between pr-3 pb-6">
             <p className="font-semibold">Languages</p>
             <div className="flex flex-col">
