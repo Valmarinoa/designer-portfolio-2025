@@ -46,7 +46,7 @@ const WorkExperienceItem = ({
                 {skills.map((skill) => (
                   <span
                     key={skill}
-                    className="bg-indigo-300 rounded-full px-2 text-xs py-0.5"
+                    className="bg-gradient-to-br from-[#9d9481]/40 via-[#bcb793]/40 to-[#a39c6e]/40 rounded-full px-2 text-xs py-0.5"
                   >
                     {skill}
                   </span>
