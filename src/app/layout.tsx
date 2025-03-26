@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Be_Vietnam_Pro, Baskervville } from "next/font/google";
 import "./globals.css";
+import { AnimatePresence } from "framer-motion";
+import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const beVietnamPro = Be_Vietnam_Pro({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-beVietnamPro",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const baskervville = Baskervville({
+  weight: ["400"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-baskervville",
 });
 
 export const metadata: Metadata = {
@@ -19,16 +27,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+    <AnimatePresence mode="wait">
+      <html
+        lang="en"
+        className={`${beVietnamPro.variable} ${baskervville.variable}`}
       >
-        {children}
-      </body>
-    </html>
+        <body className="antialiased items-center bg-[#f2f2f2]">
+          <ClientLayoutWrapper />
+          {children}
+        </body>
+      </html>
+    </AnimatePresence>
   );
 }
