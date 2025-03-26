@@ -15,7 +15,6 @@ import MobileLandingContainer from "./mobile/MobileLandingContainer";
 import StackCarousel from "./StackCarousel";
 
 export default function LandingPage() {
-  const [hasMounted, setHasMounted] = useState(false);
   const searchParams = useSearchParams();
   const setSelectedItem = useSetAtom(selectedProjectAtom);
   const setIsModalOpen = useSetAtom(isModalOpenAtom);
@@ -27,10 +26,6 @@ export default function LandingPage() {
   const [mouseModal, setMouseModal] = useState({ active: false, index: 0 });
 
   useEffect(() => {
-    setHasMounted(true); // Avoid hydration mismatch
-  }, []);
-
-  useEffect(() => {
     const projectParam = searchParams.get("project");
     if (projectParam) {
       setSelectedItem(projectParam);
@@ -38,7 +33,6 @@ export default function LandingPage() {
     }
   }, [searchParams, setSelectedItem, setIsModalOpen]);
 
-  if (!hasMounted) return null;
   return (
     <div>
       {/* New mobile menu */}
@@ -83,7 +77,6 @@ export default function LandingPage() {
               projects={projectsDataDsk}
             />
             <>
-              {" "}
               <DesktopFooter />
             </>
           </div>

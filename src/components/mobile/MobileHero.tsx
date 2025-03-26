@@ -9,7 +9,7 @@ const MobileHero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const heroRef = useRef<HTMLDivElement>(null); // ✅ Track Hero section
   const isInView = useInView(heroRef);
-  const [_, setHeroInView] = useAtom(isHeroInViewAtom);
+  const [, setHeroInView] = useAtom(isHeroInViewAtom);
 
   useEffect(() => {
     setHeroInView(isInView);

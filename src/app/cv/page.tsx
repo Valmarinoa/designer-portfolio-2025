@@ -73,7 +73,7 @@ const CV = () => {
                       </p>
                       <h3 className="tracking-tight leading-7">Rare Talents</h3>
                       <h4 className="font-baskervville-italic text-sm">
-                        Bachelor&apos;s Scholarship
+                        Bachelor`s Scholarship
                       </h4>
                     </div>
                   </div>

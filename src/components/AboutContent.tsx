@@ -40,7 +40,7 @@ const AboutContent = () => {
           />
           <div className="flex gap-6 pt-3  w-full justify-between pr-3  border-b border-black/40 pb-3">
             <p className="font-semibold">Contact & Socials</p>
-            <SocialsComponent color="black" />
+            <SocialsComponent color="black" hasPhoneNumber />
           </div>
           <div className="flex gap-6 pt-3 w-full justify-between pr-3 pb-6">
             <p className="font-semibold">Languages</p>
@@ -53,7 +53,7 @@ const AboutContent = () => {
         {/* Text Content */}
         <div className="flex flex-col gap-3 w-full">
           <p className="leading-6">
-            I'm an Amsterdam-based frontend developer, with roots in Colombia
+            I`m an Amsterdam-based frontend developer, with roots in Colombia
             and a background in art and industrial design. I bring a creative,
             human-centered approach to building digital experiences that are
             both thoughtful and engaging.
@@ -70,7 +70,7 @@ const AboutContent = () => {
             Growing up in a culture where magical realism is part of everyday
             life shaped the way I think about design and storytelling. That
             perspective has been enriched by time spent living in France and the
-            Netherlands, and by working across languages and cultures. I'm
+            Netherlands, and by working across languages and cultures. I`m
             fluent in Spanish, English, French, and Portuguese, which helps me
             connect deeply with people and ideas from all over the world.
           </p>

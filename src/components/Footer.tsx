@@ -5,7 +5,7 @@ import { MaskText } from "./MaskText";
 import SocialsComponent from "./SocialsComponent";
 
 const Footer = () => {
-  const phrases: React.ReactNode[] = [<>Let&apos;s talk!</>];
+  const phrases: React.ReactNode[] = [<>Let`s talk!</>];
 
   return (
     <AnimatePresence>
@@ -38,7 +38,12 @@ const Footer = () => {
             transition={{ duration: 2, delay: 1 }}
           />
           <div className="text-left w-full flex flex-col">
-            <SocialsComponent className="gap-2" color="#f2f2f2" />
+            <SocialsComponent
+              className="gap-2"
+              color="#f2f2f2"
+              delay={0}
+              hasPhoneNumber
+            />
           </div>
           <p className="text-right">©2025</p>
           {/* <p className="text-center fixed bottom-0 left-1/2 -translate-x-1/2 mix-blend-luminosity">
