@@ -1,6 +1,5 @@
 import React from "react";
 import { MaskText } from "./MaskText";
-import SocialsComponent from "./SocialsComponent";
 import { motion } from "framer-motion";
 import { mediaVariants } from "@/constants/variants";
 
