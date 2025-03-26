@@ -1,7 +1,8 @@
 import React from "react";
-import Image from "next/image";
 import { MaskText } from "./MaskText";
 import SocialsComponent from "./SocialsComponent";
+import { motion } from "framer-motion";
+import { mediaVariants } from "@/constants/variants";
 
 const AboutContent = () => {
   const languages: React.ReactNode[] = [
@@ -31,12 +32,14 @@ const AboutContent = () => {
       <div className="relative flex flex-col md:flex-row">
         {/* Floating Image */}
         <div className=" w-full max-w-[350px] h-full relative overflow-hidden mr-6 mb-4 rounded-sm">
-          <Image
+          <motion.img
             src="/media/yo3.png"
-            height={220}
-            width={260}
-            alt="Me"
+            alt="about me"
             className="w-full h-full object-cover rounded-md"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, margin: "-100px" }}
+            variants={mediaVariants}
           />
           <div className="flex gap-6 pt-3  w-full justify-between pr-3  border-b border-black/40 pb-3">
             <p className="font-semibold">Contact & Socials</p>
