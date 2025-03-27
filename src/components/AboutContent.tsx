@@ -43,10 +43,7 @@ const AboutContent = () => {
             Right now, I’m focused on finding new ways to combine design, code,
             and storytelling. Whether I’m collaborating with teams or working on
             personal projects, I’m always looking to build digital products that
-            feel intentional, engaging, and impactful.  Whether I’m working with
-            a team or diving into personal projects, I’m always looking for
-            fresh, meaningful ways to bring ideas to life through digital
-            experiences.
+            feel intentional, engaging, and impactful. 
           </p>
         </div>
       </div>
