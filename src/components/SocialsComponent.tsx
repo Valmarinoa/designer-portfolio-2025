@@ -29,7 +29,7 @@ const SocialsComponent = ({
             fill={color}
           />
         </svg>
-        <p>email</p>
+        <a href="mailto:valenmarinocol@gmail.com">email</a>
       </span>
     </>,
     <>
@@ -46,7 +46,9 @@ const SocialsComponent = ({
             fill={color}
           />
         </svg>
-        <p>linked-in</p>
+        <a href="https://www.linkedin.com/in/valentina-marino-arboleda/">
+          linked-in
+        </a>
       </span>
     </>,
     <>
@@ -63,7 +65,7 @@ const SocialsComponent = ({
             fill={color}
           />
         </svg>
-        <p>github</p>
+        <a href="https://github.com/Valmarinoa">github</a>
       </span>
     </>,
     <>

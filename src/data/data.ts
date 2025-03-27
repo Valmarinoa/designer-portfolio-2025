@@ -105,7 +105,8 @@ export const projectsData: Record<string, ProjectItem> = {
     title: "MOCO Museum",
     link: "https://mocomuseum.com/",
     category: "Web",
-    description: "",
+    description:
+      "The MOCO Museum website and ticketing platform: I helped craft a visually rich and user-friendly interface that reflected the museum's innovative spirit. Working with designers, I helped bring the museum's bold concepts to life, optimizing performance, integrating ticketing features, and ensuring an immersive, seamless experience for international visitors.",
     nature: "client work",
   },
   bks: {

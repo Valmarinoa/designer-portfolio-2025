@@ -39,7 +39,7 @@ export default function RootLayout({
         <body className="antialiased items-center bg-[#f2f2f2] selection:bg-[#DBFE87]/80 selection:text-black/90">
           <ClientLayoutWrapper />
           {children}
-          <p className="text-center text-xs fixed bottom-0 left-1/2 -translate-x-1/2 font-baskervville-italic">
+          <p className="text-center text-xs fixed bottom-0 left-1/2 -translate-x-1/2 font-baskervville-italic z-50">
             Coded with love 🩵
           </p>
         </body>
