@@ -45,7 +45,7 @@ const CV = () => {
             value="education"
             className="mt-6 md:mt-0 md:flex md:flex-row-reverse flex flex-col-reverse gap-10 "
           >
-            <div className="w-full mx-auto relative overflow-y-auto">
+            <div className="w-full mx-auto relative overflow-y-auto mt-12">
               {educationExperiences.map((experience, index) => (
                 <motion.div
                   key={index}

@@ -36,9 +36,12 @@ export default function RootLayout({
         lang="en"
         className={`${beVietnamPro.variable} ${baskervville.variable}`}
       >
-        <body className="antialiased items-center bg-[#f2f2f2]">
+        <body className="antialiased items-center bg-[#f2f2f2] selection:bg-[#DBFE87]/80 selection:text-black/90">
           <ClientLayoutWrapper />
           {children}
+          <p className="text-center text-xs fixed bottom-0 left-1/2 -translate-x-1/2 font-baskervville-italic">
+            Coded with love 🩵
+          </p>
         </body>
       </html>
     </AnimatePresence>

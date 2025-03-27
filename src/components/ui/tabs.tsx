@@ -17,7 +17,7 @@ const TabsList = React.forwardRef<
       "inline-flex h-20 items-start justify-start -pl-3 md:pl-0 bg-[#f2f2f2] text-muted-foreground w-full fixed  top-32 md:top-[190px] pt-4",
       className
     )}
-    style={{ boxShadow: "0 10px 15px -3px #f2f2f2, 0 4px 6px -4px #f2f2f2" }}
+    style={{ boxShadow: "0 5px 5px -3px #f2f2f2, 0 4px 6px -4px #f2f2f2" }}
     {...props}
   />
 ));

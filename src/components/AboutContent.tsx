@@ -5,9 +5,9 @@ import { mediaVariants } from "@/constants/variants";
 const AboutContent = () => {
   return (
     <div className="max-w-[880px] text-black/80 z-50 w-full mt-7 md:mt-0">
-      <div className="relative flex flex-col md:flex-row">
+      <div className="relative flex flex-col md:flex-row ">
         {/* Floating Image */}
-        <div className=" w-full max-w-[350px] h-full relative overflow-hidden mr-6 mb-4 rounded-sm">
+        <div className=" w-full max-w-[370px] h-full relative overflow-hidden md:mr-6 mb-4 rounded-sm ">
           <motion.img
             src="/media/yo3.png"
             alt="about me"
@@ -20,34 +20,33 @@ const AboutContent = () => {
         </div>
 
         {/* Text Content */}
-        <div className="flex flex-col gap-3 w-full">
-          <p className="leading-6">
-            I`m an Amsterdam-based frontend developer, with roots in Colombia
-            and a background in art and industrial design. I bring a creative,
-            human-centered approach to building digital experiences that are
-            both thoughtful and engaging.
-          </p>
-          <p className="leading-6">
+        <div className="flex flex-col gap-3 w-full text-sm">
+          <p className="leading-5">
+            I’m a frontend developer based in Amsterdam, originally from
+            Colombia, with a background in art and industrial design. My work
+            sits somewhere between creativity and code—where visual thinking,
+            storytelling, and technology come together to shape digital
+            experiences that feel thoughtful, human, and intuitive.
+            <br /> <br />
             Over the past few years, I’ve worked across web development and
-            product design—collaborating on projects in industries like IoT,
-            retail, and healthcare. My journey began in the visual arts and
-            evolved into a love for code and interaction design, where I now
-            focus on crafting smooth, intuitive interfaces using modern tech
-            stacks.
-          </p>
-          <p className="leading-6">
-            Growing up in a culture where magical realism is part of everyday
-            life shaped the way I think about design and storytelling. That
-            perspective has been enriched by time spent living in France and the
-            Netherlands, and by working across languages and cultures. I`m
-            fluent in Spanish, English, French, and Portuguese, which helps me
-            connect deeply with people and ideas from all over the world.
-          </p>
-          <p className="leading-6">
-            Today, I’m focused on exploring new ways to blend technology,
-            design, and narrative. I’m driven by a desire to create digital
-            experiences that are not just functional, but meaningful, immersive,
-            and emotionally resonant.
+            product design, contributing to projects in industries like IoT,
+            retail, and healthcare. I started out in the visual arts, then
+            studied industrial design, and eventually found my way into frontend
+            development—drawn to the challenge of turning ideas into
+            interactive, responsive experiences using modern tech stacks.
+            <br /> <br />
+            Growing up in Colombia, where magical realism is part of the
+            cultural DNA, gave me a strong sense of narrative and imagination.
+            Living in France and the Netherlands added new perspectives, and
+            being fluent in Spanish, English, French, and Portuguese has helped
+            me connect and collaborate across cultures. <br /> <br />
+            Right now, I’m focused on finding new ways to combine design, code,
+            and storytelling. Whether I’m collaborating with teams or working on
+            personal projects, I’m always looking to build digital products that
+            feel intentional, engaging, and impactful.  Whether I’m working with
+            a team or diving into personal projects, I’m always looking for
+            fresh, meaningful ways to bring ideas to life through digital
+            experiences.
           </p>
         </div>
       </div>

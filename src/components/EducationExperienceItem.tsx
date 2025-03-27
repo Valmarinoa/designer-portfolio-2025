@@ -8,12 +8,12 @@ const EducationExperienceItem = ({
   place,
 }: EducationExperienceProps) => {
   return (
-    <div className="w-full flex justify-between relative h-fit md:py-6 py-4 mt-12 md:mt-0">
+    <div className="w-full flex justify-between relative h-fit md:py-5 py-4 ">
       <div className="w-[96%]">
         <div className="flex flex-col gap-3">
           <div className="flex gap-3">
             <div className="flex flex-col ">
-              <p className="flex-nowrap text-[9px] whitespace-nowrap opacity-80 pb-2">
+              <p className="flex-nowrap text-[9px] whitespace-nowrap opacity-80 pb-1">
                 {dateRange}
               </p>
               <h3 className="text-2xl tracking-tight">{school}</h3>

@@ -7,7 +7,7 @@ const MentionsComponent = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.8, delay: 0.5 }}
+      transition={{ duration: 0.8, delay: 0.2 }}
       className=" bg-[#f2f2f2] flex flex-col w-full md:w-[50%] overflow-y-auto"
     >
       <div>

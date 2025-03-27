@@ -14,11 +14,13 @@ const InfoPages = ({ children, title }: InfoPagesTemplateProps) => {
   return (
     <>
       {/* <NavigationNavbar /> */}
-      <div
-        className="flex bg-[#f2f2f2] items-center flex-col px-4 z-0 mb-20 
-       w-full "
-      >
-        <div className="w-full max-w-[880px] mx-auto text-left z-40 bg-[#f2f2f2] flex fixed md:h-[220px] h-[150px] md:pt-20">
+      <div className="flex bg-[#f2f2f2] items-center flex-col px-4 z-0 mb-20 w-full ">
+        <div
+          className="w-full max-w-[880px] mx-auto text-left z-40 bg-[#f2f2f2] flex fixed md:h-[220px] h-[150px] md:pt-20"
+          style={{
+            boxShadow: "0 5px 5px -3px #f2f2f2, 0 4px 6px -4px #f2f2f2",
+          }}
+        >
           <div className="text-6xl md:text-9xl flex items-center tracking-tighter text-black/80 fixed pt-20 md:pt-0 pl-3 md:pl-0 overflow-hidden">
             {getChars(title)}
           </div>
@@ -40,7 +42,9 @@ const InfoPages = ({ children, title }: InfoPagesTemplateProps) => {
             <SocialsComponent
               color="black"
               hasPhoneNumber={false}
-              className="text-sm mt-4 hidden md:block"
+              className={`text-sm mt-4 ${
+                title === "CV" ? "hidden md:block" : "-mt-4 md:mt-6 md:mr-"
+              } `}
             />
           </div>
         </div>
