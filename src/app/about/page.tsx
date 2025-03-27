@@ -19,7 +19,7 @@ const AboutPage = () => {
         variants={textBlockVariants}
         initial="hidden"
         animate="visible"
-        className="flex gap-10 justify-center z-50 w-full max-w-[800px] m-auto"
+        className="flex gap-10 justify-center z-50 w-full max-w-[880px] m-auto"
       >
         <AboutContent />
       </motion.div>

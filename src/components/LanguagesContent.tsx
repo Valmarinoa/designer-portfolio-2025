@@ -2,10 +2,10 @@ import React from "react";
 
 const LanguagesContent = () => {
   return (
-    <div className="flex text-black/70 pt-8 z-50 text-sm">
+    <div className="flex text-black/90 pt-4 z-50 text-sm">
       <div className="flex flex-col gap-3">
         <h5 className="text-2xl">Languages</h5>
-        <ul className="flex flex-col list-disc list-inside">
+        <ul className="flex flex-col space-y-1">
           <li>
             <span>English</span> -
             <span className="pl-1  text-sm font-baskervville-italic">

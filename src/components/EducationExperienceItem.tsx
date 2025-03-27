@@ -8,8 +8,8 @@ const EducationExperienceItem = ({
   place,
 }: EducationExperienceProps) => {
   return (
-    <div className="w-full flex justify-between relative h-fit md:py-16 py-4 mt-12 md:mt-0">
-      <div className="w-[86%]">
+    <div className="w-full flex justify-between relative h-fit md:py-6 py-4 mt-12 md:mt-0">
+      <div className="w-[96%]">
         <div className="flex flex-col gap-3">
           <div className="flex gap-3">
             <div className="flex flex-col ">

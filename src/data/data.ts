@@ -105,8 +105,7 @@ export const projectsData: Record<string, ProjectItem> = {
     title: "MOCO Museum",
     link: "https://mocomuseum.com/",
     category: "Web",
-    description:
-      "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
+    description: "",
     nature: "client work",
   },
   bks: {
@@ -155,7 +154,7 @@ export const projectsData: Record<string, ProjectItem> = {
     category: "Web",
 
     description:
-      "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
+      "A split image animation using clip-path css value, animated with framer motion and Nextjs. Inspired by: https://tux.co/en/ and uses images from brasilian photographer Luis Braga.",
     nature: "playground",
   },
   caminhos: {
@@ -198,8 +197,7 @@ export const projectsData: Record<string, ProjectItem> = {
     title: "Cumbre",
     link: "",
     category: "Shader",
-    description:
-      "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
+    description: "",
     nature: "playground",
   },
   mercurio: {
@@ -222,8 +220,7 @@ export const projectsDataDsk: ProjectItem[] = [
     title: "MOCO Museum",
     link: "https://mocomuseum.com/",
     category: "Web platform",
-    description:
-      "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
+    description: "",
     nature: "client work",
   },
   {
@@ -234,8 +231,7 @@ export const projectsDataDsk: ProjectItem[] = [
     title: "Best Kept Secret",
     link: "https://www.bestkeptsecret.nl/",
     category: "Web platform",
-    description:
-      "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
+    description: "",
     nature: "client work",
   },
   // unvrs 2
@@ -247,8 +243,7 @@ export const projectsDataDsk: ProjectItem[] = [
     title: "UNVRS",
     link: "https://www.unvrs.com/",
     category: "Web platform",
-    description:
-      "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
+    description: "",
     nature: "client work",
   },
   // brasil
@@ -259,8 +254,7 @@ export const projectsDataDsk: ProjectItem[] = [
     title: "Botánica Onírica",
     link: "https://botanica-onirica.netlify.app",
     category: "Shader",
-    description:
-      "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
+    description: "",
     nature: "playground",
   },
   {
@@ -271,8 +265,7 @@ export const projectsDataDsk: ProjectItem[] = [
     title: "Caminhos",
     link: "https://abre-caminhos.netlify.app/",
     category: "Shader",
-    description:
-      "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
+    description: "",
     nature: "playground",
   },
   {
@@ -282,8 +275,7 @@ export const projectsDataDsk: ProjectItem[] = [
     title: "Cumbre",
     link: "",
     category: "Shader",
-    description:
-      "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
+    description: "",
     nature: "playground",
   },
   {
@@ -293,8 +285,7 @@ export const projectsDataDsk: ProjectItem[] = [
     title: "Mercurio",
     link: "https://mercury-breaths.netlify.app/",
     category: "Shader",
-    description:
-      "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
+    description: "",
     nature: "playground",
   },
   {
@@ -305,23 +296,10 @@ export const projectsDataDsk: ProjectItem[] = [
     title: "Brazil Mood",
     link: "https://brazilmood.netlify.app/",
     category: "Web",
-    description:
-      "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
+    description: "",
     nature: "playground",
   },
-  // about
-  // {
-  //   id: "about",
-  //   type: "image",
-  //   src: "/media/me2.png",
-  //   alt: "About the developer",
-  //   title: "About",
-  //   category: "About",
-  //   description:
-  //     "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
 
-  //},
-  // vignettes 5
   {
     id: "vignettes",
     type: "image",
@@ -330,11 +308,9 @@ export const projectsDataDsk: ProjectItem[] = [
     title: "Vignettes",
     link: "",
     category: "Web",
-    description:
-      "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
+    description: "",
     nature: "playground",
   },
-  // caminhos
 
   {
     id: "routinely",
@@ -344,8 +320,7 @@ export const projectsDataDsk: ProjectItem[] = [
     link: "https://www.routinely.com/en",
     title: "Routinely",
     category: "Web application | e-commerce",
-    description:
-      "Granularidade: quando existem palavras que denotam aspectos do amor que não foram brindados/ou negligenciados pela nossa cultura, fica complicado de vivenciar todos aqueles multiples aspetos. ",
+    description: "",
     nature: "client work",
   },
   // 8

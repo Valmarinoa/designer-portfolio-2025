@@ -18,7 +18,7 @@ const WorkExperienceItem = ({
         </p>
       </div>
 
-      <div className="md:w-[86%] w-full">
+      <div className="md:w-[96%] w-full">
         <div className="flex flex-col gap-3">
           <div className="flex gap-3">
             <div className="w-12 h-12 min-w-12 my-auto">
@@ -46,7 +46,7 @@ const WorkExperienceItem = ({
                 {skills.map((skill) => (
                   <span
                     key={skill}
-                    className="bg-gradient-to-br from-[#9d9481]/40 via-[#bcb793]/40 to-[#a39c6e]/40 rounded-full px-2 text-xs py-0.5"
+                    className="bg-[#DBFE87] rounded-full px-2 text-xs py-0.5"
                   >
                     {skill}
                   </span>

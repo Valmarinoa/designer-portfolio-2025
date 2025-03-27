@@ -1,33 +1,10 @@
 import React from "react";
-import { MaskText } from "./MaskText";
 import { motion } from "framer-motion";
 import { mediaVariants } from "@/constants/variants";
 
 const AboutContent = () => {
-  const languages: React.ReactNode[] = [
-    <>
-      <span className="flex items-center gap-2">
-        <p>English</p>
-      </span>
-    </>,
-    <>
-      <span className="flex items-center gap-2">
-        <p>Spanish</p>
-      </span>
-    </>,
-    <>
-      <span className="flex items-center gap-2">
-        <p>French</p>
-      </span>
-    </>,
-    <>
-      <span className="flex items-center gap-2">
-        <p>Portuguese</p>
-      </span>
-    </>,
-  ];
   return (
-    <div className="max-w-[800px] text-black/80 z-50 w-full mt-7 md:mt-0">
+    <div className="max-w-[880px] text-black/80 z-50 w-full mt-7 md:mt-0">
       <div className="relative flex flex-col md:flex-row">
         {/* Floating Image */}
         <div className=" w-full max-w-[350px] h-full relative overflow-hidden mr-6 mb-4 rounded-sm">
@@ -40,20 +17,6 @@ const AboutContent = () => {
             viewport={{ once: false, margin: "-100px" }}
             variants={mediaVariants}
           />
-          {/* <div className="flex gap-6 pt-3  w-full justify-between pr-3  border-b border-black/40 pb-3">
-            <p className="font-semibold">Contact & Socials</p>
-            <SocialsComponent color="black" hasPhoneNumber={false} />
-          </div> */}
-          <div className="flex gap-6 pt-3 w-full justify-between pr-3 pb-6">
-            <p className="font-semibold">Languages</p>
-            <div className="flex flex-col">
-              <MaskText
-                phrases={languages}
-                className={"text-sm"}
-                startDelay={1}
-              />
-            </div>
-          </div>
         </div>
 
         {/* Text Content */}
