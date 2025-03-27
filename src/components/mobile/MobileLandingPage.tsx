@@ -110,7 +110,11 @@ const MobileLandingPage = () => {
           <AccordionItem value="item-4" className="no-underline py-4">
             <MaskText phrases={cvOption} className={""} />
           </AccordionItem>
-          <AccordionItem value="item-2" className="no-underline ">
+          <AccordionItem
+            value="item-2"
+            defaultValue={["item-2"]}
+            className="no-underline "
+          >
             <AccordionTrigger className="no-underline text-[34px] font-normal tracking-tight">
               <MaskText phrases={selectedWorkOption} className={""} />
             </AccordionTrigger>

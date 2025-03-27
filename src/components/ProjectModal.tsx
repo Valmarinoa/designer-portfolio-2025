@@ -95,7 +95,7 @@ const ProjectModal: React.FC = () => {
               duration: 0.6,
               ease: [0.25, 0.1, 0.25, 1],
             }}
-            className="bg-gradient-to-b from-transparent from-60% to-[#f2f2f2]/40 to-90% rounded-lg md:backdrop-blur-lg z-10 md:shadow-lg max-h-[530px] h-fit md:w-full max-w-[460px] md:max-h-[600px] items-center m-auto overflow-hidden"
+            className="bg-gradient-to-b from-transparent from-60% to-[#f2f2f2]/40 to-90% rounded-lg md:backdrop-blur-lg z-10 md:shadow-lg max-h-[530px] h-fit md:w-full max-w-[460px] md:max-h-[600px] items-center m-auto overflow-hidden shadow-xl"
           >
             <motion.div
               layoutId={`modal-${selectedItem}`}
