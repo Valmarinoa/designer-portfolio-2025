@@ -27,8 +27,8 @@ const ProjectModal: React.FC = () => {
   if (!isModalOpen || !selectedItem) return null;
 
   const closeModal = () => {
-    setIsModalOpen(false);
-    router.back();
+    setIsModalOpen(false); // only trigger exit
+    router.push("/", { scroll: false });
   };
 
   return (
@@ -36,6 +36,7 @@ const ProjectModal: React.FC = () => {
       mode="wait"
       onExitComplete={() => {
         setSelectedItem(null);
+        // ✅ move this here!
       }}
     >
       {isModalOpen && selectedItem && (
