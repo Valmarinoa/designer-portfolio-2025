@@ -8,7 +8,7 @@ const MentionsComponent = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.2 }}
-      className=" bg-[#f2f2f2] flex flex-col w-full md:w-[50%] overflow-y-auto"
+      className=" bg-[#f2f2f2] flex flex-col w-full md:w-full overflow-y-auto"
     >
       <div>
         <h4 className="text-2xl mb-3 md:mt-8">Mentions</h4>

@@ -28,12 +28,12 @@ const InfoPages = ({ children, title }: InfoPagesTemplateProps) => {
             {title === "CV" && (
               <>
                 <motion.a
-                  href="/CV-Valentina-Marino-FE.pdf" // Make sure this path matches your actual file
+                  href="/CV-Valentina-Marino-FE.pdf"
                   download
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 0.4, delay: 1 }}
-                  className="text-xs px-3 py-1 border rounded-full border-black/40"
+                  transition={{ duration: 0.4, delay: 0.5 }}
+                  className="text-xs px-3 py-1 border rounded-full border-black/40 transition-all hover:shadow-md duration-300"
                 >
                   Download CV
                 </motion.a>
@@ -43,7 +43,7 @@ const InfoPages = ({ children, title }: InfoPagesTemplateProps) => {
               color="black"
               hasPhoneNumber={false}
               className={`text-sm mt-4 ${
-                title === "CV" ? "hidden md:block" : "-mt-4 md:mt-6 md:mr-"
+                title === "CV" ? "hidden md:block" : "-mt-4 md:mt-6"
               } `}
             />
           </div>

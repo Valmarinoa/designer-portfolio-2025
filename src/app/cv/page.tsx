@@ -12,7 +12,7 @@ import MentionsComponent from "@/components/MentionsComponent";
 const CV = () => {
   return (
     <InfoPages title="CV">
-      <div className="md:flex md:gap-16 md:justify-between">
+      <div className="md:flex md:gap-6 md:justify-between">
         <Tabs defaultValue="professional" className="w-full ">
           <TabsList className="z-50">
             <TabsTrigger value="professional">Professional</TabsTrigger>
@@ -66,14 +66,16 @@ const CV = () => {
           </TabsContent>
           <TabsContent
             value="extras"
-            className="mt-14 md:mt-0 md:flex md:flex-row-reverse flex flex-col-reverse gap-10 "
+            className="mt-16 md:mt-0 md:flex md:flex-row-reverse flex flex-col-reverse gap-10 "
           >
             <div className="w-full mx-auto relative overflow-y-auto">
               <MentionsComponent />
             </div>
           </TabsContent>
         </Tabs>
-        <MentionsComponent />
+        <div className="hidden md:block w-[40%]">
+          <MentionsComponent />
+        </div>
       </div>
     </InfoPages>
   );

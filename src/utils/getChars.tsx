@@ -26,12 +26,13 @@ export const getCharsDelayed = (
       custom={[
         animationDelay + i * 0.05,
         animationDelay + (word.length - i) * characterAnimationDelay,
-      ]} // Added delay
+      ]}
       variants={translate}
       initial="initial"
       animate="enter"
       exit="exit"
       key={char + i}
+      className="inline-block will-change-transform transform-gpu "
     >
       {char}
     </motion.span>

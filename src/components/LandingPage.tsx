@@ -4,9 +4,8 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import DskModal from "@/components/desktop/DskModal";
 import ProjectLink from "@/components/desktop/ProjectLink";
-import { projectsDataDsk } from "@/data/data";
+import { projectsDataDsk, getItemContent } from "@/data/data";
 import { useSearchParams } from "next/navigation";
-import { getItemContent } from "@/data/data";
 import { useSetAtom } from "jotai";
 import { selectedProjectAtom, isModalOpenAtom } from "@/store/modalAtom";
 import ProjectModal from "./ProjectModal";
@@ -25,6 +24,7 @@ export default function LandingPage() {
   });
   const [mouseModal, setMouseModal] = useState({ active: false, index: 0 });
 
+  // Handle modal open on initial load
   useEffect(() => {
     const projectParam = searchParams.get("project");
     if (projectParam) {
@@ -32,6 +32,25 @@ export default function LandingPage() {
       setIsModalOpen(true);
     }
   }, [searchParams, setSelectedItem, setIsModalOpen]);
+
+  // Sync modal with browser back/forward buttons
+  useEffect(() => {
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const projectId = params.get("project");
+
+      if (projectId) {
+        setSelectedItem(projectId);
+        setIsModalOpen(true);
+      } else {
+        setIsModalOpen(false);
+        setSelectedItem(null);
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [setSelectedItem, setIsModalOpen]);
 
   return (
     <div>
@@ -51,7 +70,7 @@ export default function LandingPage() {
               {projectsDataDsk.map((project, index) => (
                 <ProjectLink
                   key={index}
-                  projectId={project.id as string} // Pass project ID for Jotai
+                  projectId={project.id as string}
                   projectTitle={getItemContent(project.id as string)?.title}
                   projectCategory={
                     getItemContent(project.id as string)?.category
@@ -76,9 +95,7 @@ export default function LandingPage() {
               mouseModal={mouseModal}
               projects={projectsDataDsk}
             />
-            <>
-              <DesktopFooter />
-            </>
+            <DesktopFooter />
           </div>
         </AnimatePresence>
       </div>

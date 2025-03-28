@@ -3,11 +3,11 @@ import { motion, useInView, useTransform, useScroll } from "framer-motion";
 import { getCharsDelayed } from "@/utils/getChars";
 import NavigationNavbar from "../NavigationNavbar";
 import { useAtom } from "jotai";
-import { isHeroInViewAtom } from "@/store/modalAtom"; // adjust path if needed
+import { isHeroInViewAtom } from "@/store/modalAtom";
 
 const MobileHero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const heroRef = useRef<HTMLDivElement>(null); // ✅ Track Hero section
+  const heroRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(heroRef);
   const [, setHeroInView] = useAtom(isHeroInViewAtom);
 
@@ -17,7 +17,7 @@ const MobileHero = () => {
 
   // Track Scroll Position
   const { scrollYProgress } = useScroll({
-    target: heroRef, // ✅ Track the hero section visibility
+    target: heroRef,
     offset: ["start end", "end start"],
   });
 

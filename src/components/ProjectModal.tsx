@@ -1,35 +1,52 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { mediaVariantsBg, mediaVariants } from "@/constants/variants"; // ✅ Re-added mediaVariants
 import { getItemContent } from "@/data/data";
 import { useAtom } from "jotai";
+import { useRouter } from "next/navigation";
 import { selectedProjectAtom, isModalOpenAtom } from "@/store/modalAtom";
 
 const ProjectModal: React.FC = () => {
   const [selectedItem, setSelectedItem] = useAtom(selectedProjectAtom);
   const [isModalOpen, setIsModalOpen] = useAtom(isModalOpenAtom);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isModalOpen]);
 
   if (!isModalOpen || !selectedItem) return null;
+
+  const closeModal = () => {
+    setIsModalOpen(false); // only trigger exit
+  };
 
   return (
     <AnimatePresence
       mode="wait"
       onExitComplete={() => {
         setSelectedItem(null);
+        router.push("/", { scroll: false }); // ✅ move this here!
       }}
     >
-      {isModalOpen && (
+      {isModalOpen && selectedItem && (
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{
-            duration: 0.4,
-            ease: "easeInOut",
-          }}
-          className="fixed inset-0 h-full backdrop-blur-[80px] z-50 flex items-center justify-center p-4 "
+          key="project-modal"
+          initial={{ opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.96 }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+          className="fixed inset-0 h-full backdrop-blur-[80px] z-50 flex items-center justify-center p-4"
+          onClick={closeModal}
         >
           {/* Background blur */}
           <div className="w-screen h-full absolute z-0 backdrop-blur-[80px]">
@@ -44,7 +61,7 @@ const ProjectModal: React.FC = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, margin: "-100px" }}
-                variants={mediaVariantsBg} // ✅ Background variant animation
+                variants={mediaVariantsBg}
               />
             ) : (
               <motion.img
@@ -54,7 +71,7 @@ const ProjectModal: React.FC = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, margin: "-100px" }}
-                variants={mediaVariantsBg} // ✅ Background variant animation
+                variants={mediaVariantsBg}
               />
             )}
           </div>
@@ -62,11 +79,8 @@ const ProjectModal: React.FC = () => {
 
           {/* Close Button */}
           <button
-            onClick={() => {
-              setIsModalOpen(false);
-              // setSelectedItem(null);
-            }}
-            className="fixed top-4 right-4 border border-black/20 w-12 h-12 flex items-center bg-[#f2f2f2]/30 justify-center rounded-full backdrop-blur-[80px] z-10"
+            onClick={closeModal}
+            className="fixed top-4 right-4 border-[1px] border-black/40 w-12 h-12 flex items-center bg-[#f2f2f2]/30 justify-center rounded-full backdrop-blur-[80px] z-10"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +92,7 @@ const ProjectModal: React.FC = () => {
               strokeWidth="1"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-6 h-6 text-black"
+              className="w-6 h-6 text-black/60"
             >
               <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
@@ -95,7 +109,7 @@ const ProjectModal: React.FC = () => {
               duration: 0.6,
               ease: [0.25, 0.1, 0.25, 1],
             }}
-            className="bg-gradient-to-b from-transparent from-60% to-[#f2f2f2]/40 to-90% rounded-lg md:backdrop-blur-lg z-10 md:shadow-lg max-h-[530px] h-fit md:w-full max-w-[460px] md:max-h-[600px] items-center m-auto overflow-hidden shadow-xl"
+            className="bg-gradient-to-b from-transparent from-60% to-[#f2f2f2]/40 to-90% rounded-lg md:backdrop-blur-lg z-10 md:shadow-lg h-fit max-h-[500px] md:w-full max-w-[460px] md:max-h-[600px] items-center m-auto overflow-hidden shadow-xl"
           >
             <motion.div
               layoutId={`modal-${selectedItem}`}
@@ -196,7 +210,7 @@ const ProjectModal: React.FC = () => {
                     },
                     hidden: { opacity: 0, y: 2 },
                   }}
-                  className="text-sm text-black/70 max-h-[150px] md:max-h-full overflow-y-auto pb-6 md:pb-6"
+                  className="text-sm text-black/70 md:max-h-full max-h-[110px] overflow-y-auto pb-6 md:pb-6"
                 >
                   {getItemContent(selectedItem)?.description || ""}
                 </motion.div>
