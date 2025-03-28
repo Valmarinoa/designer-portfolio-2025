@@ -41,11 +41,15 @@ const ProjectModal: React.FC = () => {
     >
       {isModalOpen && selectedItem && (
         <motion.div
-          key="project-modal"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
+          transition={{
+            delay: 0.1,
+            duration: 0.4,
+            ease: [0.25, 0.1, 0.25, 1],
+          }}
+          key="project-modal"
           className="fixed inset-0 h-full backdrop-blur-[80px] z-50 flex items-center justify-center p-4"
           onClick={closeModal}
         >
