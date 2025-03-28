@@ -54,7 +54,7 @@ const WorkExperienceItem = ({
               </div>
             </div>
           </div>
-          <p className="text-sm text-black/70">{description}</p>
+          <p className="text-sm">{description}</p>
         </div>
       </div>
     </div>

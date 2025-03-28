@@ -27,7 +27,8 @@ const ProjectModal: React.FC = () => {
   if (!isModalOpen || !selectedItem) return null;
 
   const closeModal = () => {
-    setIsModalOpen(false); // only trigger exit
+    setIsModalOpen(false);
+    router.back();
   };
 
   return (
@@ -35,7 +36,6 @@ const ProjectModal: React.FC = () => {
       mode="wait"
       onExitComplete={() => {
         setSelectedItem(null);
-        router.push("/", { scroll: false }); // ✅ move this here!
       }}
     >
       {isModalOpen && selectedItem && (
@@ -214,7 +214,7 @@ const ProjectModal: React.FC = () => {
                 >
                   {getItemContent(selectedItem)?.description || ""}
                 </motion.div>
-              </motion.div>{" "}
+              </motion.div>
             </motion.div>
           </motion.div>
         </motion.div>
