@@ -155,7 +155,7 @@ export const projectsData: Record<string, ProjectItem> = {
     category: "Web",
 
     description:
-      "A split image animation using clip-path css value, animated with framer motion and Nextjs. Inspired by: https://tux.co/en/ and uses images from brasilian photographer Luis Braga.",
+      " A split image animation using clip-path css value, animated with framer motion and Nextjs. Inspired by: https://tux.co/en/ and Olivier Larose. All images by photographer Gleeson Paulino",
     nature: "playground",
   },
   caminhos: {
