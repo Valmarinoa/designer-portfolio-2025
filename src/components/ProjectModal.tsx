@@ -2,12 +2,12 @@
 
 import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { mediaVariantsBg } from "@/constants/variants"; // ✅ Re-added mediaVariants
 import { getItemContent } from "@/data/data";
 import { useAtom } from "jotai";
 import { useRouter } from "next/navigation";
 import { selectedProjectAtom, isModalOpenAtom } from "@/store/modalAtom";
 import ProjectModalContent from "./ProjectModalContent";
+import { mediaVariantsBg } from "@/constants/variants";
 
 const ProjectModal: React.FC = () => {
   const [selectedItem, setSelectedItem] = useAtom(selectedProjectAtom);
@@ -73,20 +73,20 @@ const ProjectModal: React.FC = () => {
                 muted
                 playsInline
                 className="object-cover w-full h-full scale-150 "
-                // initial="hidden"
-                // whileInView="visible"
-                // viewport={{ once: false, margin: "-100px" }}
-                // variants={mediaVariantsBg}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, margin: "0px" }}
+                variants={mediaVariantsBg}
               />
             ) : (
               <motion.img
                 src={getItemContent(selectedItem)?.src || ""}
                 alt={getItemContent(selectedItem)?.alt || ""}
                 className="w-full h-full object-cover scale-150"
-                // initial="hidden"
-                // whileInView="visible"
-                // viewport={{ once: false, margin: "-100px" }}
-                // variants={mediaVariantsBg}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, margin: "0px" }}
+                variants={mediaVariantsBg}
               />
             )}
           </motion.div>

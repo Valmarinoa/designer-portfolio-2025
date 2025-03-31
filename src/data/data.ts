@@ -151,7 +151,7 @@ export const projectsData: Record<string, ProjectItem> = {
     alt: "Vignettes Project",
     title: "Vignettes",
 
-    link: "",
+    link: "https://amazonia-tones.vercel.app/",
     category: "Web",
 
     description:
