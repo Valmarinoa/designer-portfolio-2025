@@ -12,16 +12,13 @@ const NavigationNavbar = () => {
     >
       <Link
         href="/"
-        className="flex text-black/90 fixed top-3 z-50 cursor-pointer  bg-blend-multiply mix-blend-multiply"
+        className="flex text-black/90 fixed top-3 z-50  bg-blend-multiply mix-blend-multiply"
       >
         <span className="font-semibold">Valentina</span> Marino
       </Link>
       <div className="relative flex justify-between items-center z-50 w-full">
         <div className="gap-6 hidden md:flex mb-auto ml-auto">
-          <Link
-            href="/about"
-            className="relative flex items-center gap-2 cursor-pointer z-50"
-          >
+          <Link href="/about" className="relative flex items-center gap-2 z-50">
             About
           </Link>
           <Link href={"/cv"}>CV</Link>

@@ -92,11 +92,11 @@ export const mediaVariants = {
 export const mediaVariantsBg = {
   hidden: {
     opacity: 0,
-    blur: "100px",
+    // blur: "100px",
   },
   visible: {
     opacity: 1,
-    blur: "100px",
+    // blur: "100px",
 
     transition: {
       duration: 0.5,

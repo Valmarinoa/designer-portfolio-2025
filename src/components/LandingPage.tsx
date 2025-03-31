@@ -66,7 +66,7 @@ export default function LandingPage() {
       <div className="hidden md:block">
         <AnimatePresence>
           <div className="w-full h-screen flex flex-col relative">
-            <motion.div className="flex flex-wrap gap-8 justify-center items-center w-[80vw] max-w-[880px] m-auto">
+            <motion.div className="flex flex-wrap gap-8 justify-center items-center w-[80vw] max-w-[950px] m-auto">
               {projectsDataDsk.map((project, index) => (
                 <ProjectLink
                   key={index}

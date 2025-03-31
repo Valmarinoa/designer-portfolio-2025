@@ -132,18 +132,18 @@ export const projectsData: Record<string, ProjectItem> = {
       "Together with another frontend developer, we managed to bring UNVRS-Ushuaïa Ibiza's 'Hyperclub' identity to life. Along with backend developers and designers, I helped build the site from scratch, focusing on interactive features, performance optimization, and seamless backend integration.",
     nature: "client work",
   },
-  brazil: {
-    type: "image",
-    src: "/media/brazil/background.png",
-    alt: "Brazil Project",
-    title: "Brazil Mood",
+  // brazil: {
+  //   type: "image",
+  //   src: "/media/brazil/background.png",
+  //   alt: "Brazil Project",
+  //   title: "Brazil Mood",
 
-    link: "https://brazilmood.netlify.app/",
-    category: "Web",
-    description:
-      "Inspired by Luna Bastos' intricate beadwork, I've created playful cursor interactions that transform an image into a 4x6 puzzle.",
-    nature: "playground",
-  },
+  //   link: "https://brazilmood.netlify.app/",
+  //   category: "Web",
+  //   description:
+  //     "Inspired by Luna Bastos' intricate beadwork, I've created playful cursor interactions that transform an image into a 4x6 puzzle.",
+  //   nature: "playground",
+  // },
 
   vignettes: {
     type: "image",
@@ -289,17 +289,17 @@ export const projectsDataDsk: ProjectItem[] = [
     description: "",
     nature: "playground",
   },
-  {
-    id: "brazil",
-    type: "image",
-    src: "/media/brazil/background.png",
-    alt: "Brazil Project",
-    title: "Brazil Mood",
-    link: "https://brazilmood.netlify.app/",
-    category: "Web",
-    description: "",
-    nature: "playground",
-  },
+  // {
+  //   id: "brazil",
+  //   type: "image",
+  //   src: "/media/brazil/background.png",
+  //   alt: "Brazil Project",
+  //   title: "Brazil Mood",
+  //   link: "https://brazilmood.netlify.app/",
+  //   category: "Web",
+  //   description: "",
+  //   nature: "playground",
+  // },
 
   {
     id: "vignettes",

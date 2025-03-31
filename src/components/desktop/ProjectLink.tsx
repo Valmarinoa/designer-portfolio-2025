@@ -40,7 +40,6 @@ export default function ProjectLink({
   return (
     <div
       key={`l_${index}`}
-      className="cursor-pointer"
       onClick={() => {
         setSelectedProject(projectId);
         setIsModalOpen(true);
@@ -71,7 +70,7 @@ export default function ProjectLink({
         )}
 
         {projectTitle && (
-          <h3 className="leading-[28px] text-4xl ">{getChars(projectTitle)}</h3>
+          <h3 className="leading-[28px] text-5xl ">{getChars(projectTitle)}</h3>
         )}
       </motion.div>
     </div>

@@ -54,7 +54,17 @@ const ProjectModal: React.FC = () => {
           onClick={closeModal}
         >
           {/* Background blur */}
-          <div className="w-screen h-full absolute z-0 backdrop-blur-[80px]">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.4,
+              ease: [0.25, 0.1, 0.25, 1],
+            }}
+            className="w-screen h-full absolute z-0 backdrop-blur-[80px]"
+          >
             {getItemContent(selectedItem)?.type === "video" ? (
               <motion.video
                 src={getItemContent(selectedItem)?.src || ""}
@@ -63,23 +73,23 @@ const ProjectModal: React.FC = () => {
                 muted
                 playsInline
                 className="object-cover w-full h-full scale-150 "
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, margin: "-100px" }}
-                variants={mediaVariantsBg}
+                // initial="hidden"
+                // whileInView="visible"
+                // viewport={{ once: false, margin: "-100px" }}
+                // variants={mediaVariantsBg}
               />
             ) : (
               <motion.img
                 src={getItemContent(selectedItem)?.src || ""}
                 alt={getItemContent(selectedItem)?.alt || ""}
                 className="w-full h-full object-cover scale-150"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, margin: "-100px" }}
-                variants={mediaVariantsBg}
+                // initial="hidden"
+                // whileInView="visible"
+                // viewport={{ once: false, margin: "-100px" }}
+                // variants={mediaVariantsBg}
               />
             )}
-          </div>
+          </motion.div>
           <div className=" absolute w-full h-full backdrop-blur-[100px] bg-[#f2f2f2]/10 z-10"></div>
 
           {/* Close Button */}
