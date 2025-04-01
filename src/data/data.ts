@@ -163,7 +163,7 @@ export const projectsData: Record<string, ProjectItem> = {
     src: "/media/caminhos/background.png",
     alt: "Caminhos Project",
     title: "Caminhos",
-    link: "https://abre-caminhos.netlify.app/",
+    link: "https://abre-caminhos-react.vercel.app/",
     category: "Shader",
     description:
       "Interactive texture inspired from the ever-changing landscapes of Lençoes Marenhenses in Brasil. ",
@@ -264,7 +264,8 @@ export const projectsDataDsk: ProjectItem[] = [
     src: "/media/caminhos/background.png",
     alt: "Caminhos Project",
     title: "Caminhos",
-    link: "https://abre-caminhos.netlify.app/",
+    // link: "https://abre-caminhos.netlify.app/",
+    link: "https://abre-caminhos-react.vercel.app/",
     category: "Shader",
     description: "",
     nature: "playground",

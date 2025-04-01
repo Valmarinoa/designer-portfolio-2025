@@ -1,19 +1,37 @@
 import { motion } from "framer-motion";
 import { translate } from "@/constants/variants";
 
+// Fisher-Yates shuffle
+const shuffleArray = (arr: number[]) => {
+  const array = [...arr];
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+};
+
 export const getChars = (word: string) => {
-  return word.split("").map((char, i) => (
-    <motion.span
-      custom={[i * 0.07, (word.length - i) * 0.03]}
-      variants={translate}
-      initial="initial"
-      animate="enter"
-      exit="exit"
-      key={char + i}
-    >
-      {char}
-    </motion.span>
-  ));
+  const length = word.length;
+  const delayIndexes = shuffleArray(Array.from({ length }, (_, i) => i));
+
+  return word.split("").map((char, i) => {
+    const delayIn = delayIndexes[i] * 0.04;
+    const delayOut = (length - delayIndexes[i]) * 0.03;
+
+    return (
+      <motion.span
+        custom={[delayIn, delayOut]}
+        variants={translate}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        key={char + i}
+      >
+        {char}
+      </motion.span>
+    );
+  });
 };
 
 export const getCharsDelayed = (
