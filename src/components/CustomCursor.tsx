@@ -9,13 +9,13 @@ const CustomCursor: React.FC = () => {
 
   // Smooth spring for elegant movement
   const smoothX = useSpring(mouseX, {
-    stiffness: 220,
+    stiffness: 320,
     damping: 16,
     mass: 0.2,
   });
 
   const smoothY = useSpring(mouseY, {
-    stiffness: 220,
+    stiffness: 320,
     damping: 16,
     mass: 0.2,
   });

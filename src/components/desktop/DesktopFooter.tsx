@@ -8,13 +8,24 @@ import SocialsComponent from "../SocialsComponent";
 const DesktopFooter = () => {
   const phrases: React.ReactNode[] = [
     <>
-      Hi! I’m a creative, versatile, and passion-driven <br />
-      Frontend Developer, who loves to build{" "}
-      <span className="font-baskervville-italic">digital</span> and{" "}
-    </>,
-    <>
-      <span className="font-baskervville-italic pr-1">physical products,</span>
-      that make people feel something.
+      Hi! I’m a frontend developer creating <br />
+      <span className="font-baskervville-italic text-[18px]">digital</span> and
+      <span className="font-baskervville-italic px-1 text-[18px]">
+        physical products
+      </span>
+      <>
+        that feel alive,
+        <br />
+        somewhere between
+        <span className="font-baskervville-italic pl-1 text-[18px]">
+          function
+        </span>{" "}
+        and
+        <span className="font-baskervville-italic pl-1 text-[18px]">
+          poetry
+        </span>
+        .
+      </>
     </>,
   ];
 

@@ -166,7 +166,7 @@ export const projectsData: Record<string, ProjectItem> = {
     link: "https://abre-caminhos-react.vercel.app/",
     category: "Shader",
     description:
-      "Interactive texture inspired from the ever-changing landscapes of Lençoes Marenhenses in Brasil. ",
+      "Interactive texture inspired from the ever-changing landscapes of Lençoes Marenhences in Brazil. ",
     nature: "playground",
   },
   routinely: {
