@@ -11,6 +11,35 @@ const MentionsComponent = () => {
       className=" bg-[#f2f2f2] flex flex-col w-full md:w-full overflow-y-auto"
     >
       <div>
+        <h4 className="text-2xl mt-10 mb-3">Skills</h4>
+        <div className="">
+          <div className="flex flex-col gap-3 pb-5">
+            <div className="flex gap-3">
+              <ul className="list-disc ml-5 text-sm space-y-2">
+                <li>ReactJS | NextJS</li>
+                <li>REST API | CraftCMS | GQL</li>
+                <li>Javascript | Typescript</li>
+                <li>CSS | TailwindCSS | ChakraUI</li>
+                <li>Design & Critical Thinking</li>
+                <li>AdobeSuite | Figma | UX-UI</li>
+                <li>Hands-on prototyping</li>
+                <li>Strong visual design skills</li>
+                <li>Versatility & Adaptability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="">
+          <div className="flex flex-col gap-3 pb-5">
+            <div className="flex gap-3">
+              <LanguagesContent />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
         <h4 className="text-2xl mb-3 md:mt-8">Mentions</h4>
         <div className="">
           <div className="flex flex-col gap-3 pb-5">
@@ -37,35 +66,6 @@ const MentionsComponent = () => {
                   Bachelor`s Scholarship
                 </h4>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h4 className="text-2xl mt-10 mb-3">Skills</h4>
-        <div className="">
-          <div className="flex flex-col gap-3 pb-5">
-            <div className="flex gap-3">
-              <ul className="list-disc ml-5 text-sm space-y-2">
-                <li>ReactJS | NextJS</li>
-                <li>REST API | CraftCMS | GQL</li>
-                <li>Javascript | Typescript</li>
-                <li>CSS | TailwindCSS | ChakraUI</li>
-                <li>Design & Critical Thinking</li>
-                <li>AdobeSuite | Figma | UX-UI</li>
-                <li>Hands-on prototyping</li>
-                <li>Strong visual design skills</li>
-                <li>Versatility & Adaptability</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div className="">
-          <div className="flex flex-col gap-3 pb-5">
-            <div className="flex gap-3">
-              <LanguagesContent />
             </div>
           </div>
         </div>

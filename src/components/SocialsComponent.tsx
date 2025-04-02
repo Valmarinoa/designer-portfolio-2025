@@ -47,7 +47,7 @@ const SocialsComponent = ({
           />
         </svg>
         <a href="https://www.linkedin.com/in/valentina-marino-arboleda/">
-          linked-in
+          linkedIn
         </a>
       </span>
     </>,
