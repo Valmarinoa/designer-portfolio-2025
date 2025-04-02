@@ -97,13 +97,15 @@ const ProjectModalContent: React.FC<Props> = ({ selectedItem }) => {
               </div>
             </motion.div>
 
-            <motion.a
-              href={project.link}
-              target="_blank"
-              className="px-10 py-2 mt-1 font-medium border border-black/40 text-xs rounded-full bg-[#f2f2f2]/20 hover:bg-[#f2f2f2]/30 transition-all hover:shadow-md duration-300"
-            >
-              Visit
-            </motion.a>
+            {project.title !== "Cumbre" && (
+              <motion.a
+                href={project.link}
+                target="_blank"
+                className="px-10 py-2 mt-1 font-medium border border-black/40 text-xs rounded-full bg-[#f2f2f2]/20 hover:bg-[#f2f2f2]/30 transition-all hover:shadow-md duration-300"
+              >
+                Visit
+              </motion.a>
+            )}
           </div>
 
           <motion.div
