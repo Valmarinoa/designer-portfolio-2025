@@ -22,7 +22,7 @@ const baskervville = Baskervville({
 });
 
 export const metadata: Metadata = {
-  title: "Dev Portfolio",
+  title: "Val's - Dev Portfolio",
   description: "Valentina Marino - Frontend Developer Portfolio",
 };
 
