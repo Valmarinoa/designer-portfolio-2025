@@ -198,7 +198,8 @@ export const projectsData: Record<string, ProjectItem> = {
     title: "Cumbre",
     link: "https://cumbre-zeta.vercel.app/",
     category: "Shader",
-    description: "",
+    description:
+      "Cumbre is a self-designed and self-developed interactive shader experiment, showcasing real-time 3D visuals with custom textures, environment maps, and distortion effects using images of the jungle which I love.",
     nature: "playground",
   },
   mercurio: {
@@ -277,7 +278,8 @@ export const projectsDataDsk: ProjectItem[] = [
     title: "Cumbre",
     link: "https://cumbre-zeta.vercel.app/",
     category: "Shader",
-    description: "",
+    description:
+      "Cumbre is a self-designed and self-developed interactive shader experiment, showcasing real-time 3D visuals with custom textures, environment maps, and distortion effects using images of the jungle which I love.",
     nature: "playground",
   },
   {
