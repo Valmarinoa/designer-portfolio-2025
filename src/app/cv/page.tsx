@@ -73,7 +73,7 @@ const CV = () => {
             </div>
           </TabsContent>
         </Tabs>
-        <div className="hidden md:block w-[40%]">
+        <div className="hidden md:block w-[40%] pl-4">
           <MentionsComponent />
         </div>
       </div>

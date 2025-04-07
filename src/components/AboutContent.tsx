@@ -22,28 +22,27 @@ const AboutContent = () => {
         {/* Text Content */}
         <div className="flex flex-col gap-3 w-full text-sm">
           <p className="leading-5">
-            I’m a frontend developer based in Amsterdam, originally from
-            Colombia, with a background in art and industrial design. My work
-            sits somewhere between creativity and code—where visual thinking,
-            storytelling, and technology come together to shape digital
-            experiences that feel thoughtful, human, and intuitive.
-            <br /> <br />
-            Over the past few years, I’ve worked across web development and
-            product design, contributing to projects in industries like IoT,
-            retail, and healthcare. I started out in the visual arts, then
-            studied industrial design, and eventually found my way into frontend
-            development—drawn to the challenge of turning ideas into
-            interactive, responsive experiences using modern tech stacks.
-            <br /> <br />
-            Growing up in Colombia, where magical realism is part of the
-            cultural DNA, gave me a strong sense of narrative and imagination.
-            Living in France and the Netherlands added new perspectives, and
-            being fluent in Spanish, English, French, and Portuguese has helped
-            me connect and collaborate across cultures. <br /> <br />
-            Right now, I’m focused on finding new ways to combine design, code,
-            and storytelling. Whether I’m collaborating with teams or working on
-            personal projects, I’m always looking to build digital products that
-            feel intentional, engaging, and impactful. 
+            I`m a frontend developer from Colombia with a background in art and
+            industrial design. My work lives at the intersection of creativity
+            and code—where visual thinking, storytelling, and technology come
+            together to craft digital experiences that feel intuitive, human,
+            and thoughtfully designed.
+            <br /> With experience spanning IoT, retail, and healthcare, I’ve
+            contributed to everything from responsive interfaces to interactive
+            platforms. I`m skilled in modern frontend tools like React, Next.js,
+            TypeScript, CSS/Tailwind, and Framer Motion for styling and
+            animation.
+            <br /> Fluent in Spanish, English, French, and Portuguese, I thrive
+            in remote, multicultural environments. I`m currently seeking
+            opportunities where I can push the boundaries of frontend
+            development and help build products that are both innovative and
+            deeply human. <br />
+            I`m drawn to the challenge of turning ideas into responsive,
+            engaging digital experiences. My creative roots give me a strong
+            visual and narrative sensibility, which I bring into every
+            project—whether I’m collaborating with a team or building something
+            on my own. Ultimately, I aim to create work that feels intentional,
+            immersive, and impactful.
           </p>
         </div>
       </div>
