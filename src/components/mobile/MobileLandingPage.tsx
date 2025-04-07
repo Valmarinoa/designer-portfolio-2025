@@ -14,21 +14,15 @@ import Link from "next/link";
 
 const MobileLandingPage = () => {
   const phrases: React.ReactNode[] = [
-    "Hi! I’m a frontend developer creating",
+    "Hi! I’m an",
+    " Amsterdam-based frontend developer",
     <>
+      creating{" "}
       <span className="font-baskervville-italic text-[39px]">digital</span> and{" "}
       <span className="font-baskervville-italic text-[39px] pr-2">
         physical products
       </span>
-      that feel alive,
-    </>,
-    "somewhere between",
-    <>
-      <span className="font-baskervville-italic text-[39px] ">function</span>{" "}
-      and
-      <span className="font-baskervville-italic text-[39px] pl-2 ">
-        poetry.
-      </span>
+      that feel alive.
     </>,
   ];
 
