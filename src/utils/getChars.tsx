@@ -16,8 +16,8 @@ export const getChars = (word: string) => {
   const delayIndexes = shuffleArray(Array.from({ length }, (_, i) => i));
 
   return word.split("").map((char, i) => {
-    const delayIn = delayIndexes[i] * 0.04;
-    const delayOut = (length - delayIndexes[i]) * 0.03;
+    const delayIn = delayIndexes[i] * 0.07;
+    const delayOut = (length - delayIndexes[i]) * 0.1;
 
     return (
       <motion.span

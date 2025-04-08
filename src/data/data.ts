@@ -159,8 +159,8 @@ export const projectsData: Record<string, ProjectItem> = {
     nature: "playground",
   },
   caminhos: {
-    type: "image",
-    src: "/media/caminhos/background.png",
+    type: "video",
+    src: "/media/caminhos/video.mp4",
     alt: "Caminhos Project",
     title: "Caminhos",
     link: "https://abre-caminhos-react.vercel.app/",
@@ -261,8 +261,8 @@ export const projectsDataDsk: ProjectItem[] = [
   },
   {
     id: "caminhos",
-    type: "image",
-    src: "/media/caminhos/background.png",
+    type: "video",
+    src: "/media/caminhos/video.mp4",
     alt: "Caminhos Project",
     title: "Caminhos",
     // link: "https://abre-caminhos.netlify.app/",
