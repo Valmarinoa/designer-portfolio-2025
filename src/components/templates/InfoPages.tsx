@@ -43,7 +43,7 @@ const InfoPages = ({ children, title }: InfoPagesTemplateProps) => {
               color="black"
               hasPhoneNumber={false}
               className={`text-sm mt-4 ${
-                title === "CV" ? "hidden md:block" : "-mt-[20px] md:mt-6"
+                title === "CV" ? "hidden md:block" : "-mt-4 md:mt-6"
               } `}
             />
           </div>

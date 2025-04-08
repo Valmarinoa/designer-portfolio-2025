@@ -17,16 +17,26 @@ const AboutContent = () => {
             viewport={{ once: false, margin: "-100px" }}
             variants={mediaVariants}
           />
+
+          <div className="self-end text-sm pt-3 hidden md:block">
+            <div className="font-baskervville-italic flex">
+              <div className="text-4xl">*</div>{" "}
+              <span className="pl-4 pt-1">
+                Double nationality: Dutch - Colombian <br />
+                EU / LATAM based.
+              </span>
+            </div>
+          </div>
         </div>
 
         {/* Text Content */}
         <div className="flex flex-col gap-3 w-full text-sm">
           <p className="leading-5">
             I`m a frontend developer from Colombia with a background in art and
-            industrial design. My work lives at the intersection of creativity
-            and code—where visual thinking, storytelling, and technology come
-            together to craft digital experiences that feel intuitive, human,
-            and thoughtfully designed.
+            industrial design; currently based in Amsterdam. My work lives at
+            the intersection of creativity and code—where visual thinking,
+            storytelling, and technology come together to craft digital
+            experiences that feel intuitive, human, and thoughtfully designed.
             <br /> <br />
             With experience spanning IoT, retail, and healthcare, I’ve
             contributed to everything from responsive interfaces to interactive
