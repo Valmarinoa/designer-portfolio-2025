@@ -27,16 +27,18 @@ const AboutContent = () => {
             and code—where visual thinking, storytelling, and technology come
             together to craft digital experiences that feel intuitive, human,
             and thoughtfully designed.
-            <br /> With experience spanning IoT, retail, and healthcare, I’ve
+            <br /> <br />
+            With experience spanning IoT, retail, and healthcare, I’ve
             contributed to everything from responsive interfaces to interactive
             platforms. I`m skilled in modern frontend tools like React, Next.js,
             TypeScript, CSS/Tailwind, and Framer Motion for styling and
             animation.
-            <br /> Fluent in Spanish, English, French, and Portuguese, I thrive
-            in remote, multicultural environments. I`m currently seeking
+            <br /> <br />
+            Fluent in Spanish, English, French, and Portuguese, I thrive in
+            remote, multicultural environments. I`m currently seeking
             opportunities where I can push the boundaries of frontend
             development and help build products that are both innovative and
-            deeply human. <br />
+            deeply human. <br /> <br />
             I`m drawn to the challenge of turning ideas into responsive,
             engaging digital experiences. My creative roots give me a strong
             visual and narrative sensibility, which I bring into every

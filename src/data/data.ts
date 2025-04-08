@@ -145,19 +145,19 @@ export const projectsData: Record<string, ProjectItem> = {
   //   nature: "playground",
   // },
 
-  vignettes: {
-    type: "image",
-    src: "/media/vignettes/background.png",
-    alt: "Vignettes Project",
-    title: "Vignettes",
+  // vignettes: {
+  //   type: "image",
+  //   src: "/media/vignettes/background.png",
+  //   alt: "Vignettes Project",
+  //   title: "Vignettes",
 
-    link: "https://amazonia-tones.vercel.app/",
-    category: "Web",
+  //   link: "https://amazonia-tones.vercel.app/",
+  //   category: "Web",
 
-    description:
-      " A split image animation using clip-path css value, animated with framer motion and Nextjs. Inspired by: https://tux.co/en/ and Olivier Larose. All images by photographer Gleeson Paulino",
-    nature: "playground",
-  },
+  //   description:
+  //     " A split image animation using clip-path css value, animated with framer motion and Nextjs. Inspired by: https://tux.co/en/ and Olivier Larose. All images by photographer Gleeson Paulino",
+  //   nature: "playground",
+  // },
   caminhos: {
     type: "video",
     src: "/media/caminhos/video.mp4",
@@ -304,17 +304,17 @@ export const projectsDataDsk: ProjectItem[] = [
   //   nature: "playground",
   // },
 
-  {
-    id: "vignettes",
-    type: "image",
-    src: "/media/vignettes/background.png",
-    alt: "Vignettes Project",
-    title: "Vignettes",
-    link: "",
-    category: "Web",
-    description: "",
-    nature: "playground",
-  },
+  // {
+  //   id: "vignettes",
+  //   type: "image",
+  //   src: "/media/vignettes/background.png",
+  //   alt: "Vignettes Project",
+  //   title: "Vignettes",
+  //   link: "",
+  //   category: "Web",
+  //   description: "",
+  //   nature: "playground",
+  // },
 
   {
     id: "routinely",
