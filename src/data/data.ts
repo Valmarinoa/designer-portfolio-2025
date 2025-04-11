@@ -12,7 +12,7 @@ export const workExperiences: WorkExperienceProps[] = [
     companyType: "Digital Agency",
     skills: ["TS", "React", "NextJS", "CraftCMS", "GraphQL", "Tailwind"],
     description:
-      "I transform premium international brand briefings into dynamic, interactive ads. All the way from concept to final build, I turn requests from clients into aesthetically appealing, fully responsive and engaging advertisements.",
+      "Responsible for building, maintaining, and expanding web applications from the ground up for a diverse clients & products, ranging from developing schooling platforms, music festival websites, to media streaming platforms. I focus on: translating codebases from JS into TS, enhancing user interfaces, optimizing performance, and ensuring seamless integration with backend, while collaborating with the design teams to scale the platform.",
     logo: "/logos/bravoure-logo.svg",
   },
   {
@@ -22,7 +22,7 @@ export const workExperiences: WorkExperienceProps[] = [
     companyType: "AI automobile scanning",
     skills: ["React", "TS", "NextJS", "Git"],
     description:
-      "I maintain the customer dashboard and design components for a SaaS product in the automotive industry. Responsibilities include dashboard upkeep, bug fixes, and enhancing user experience. I collaborate with design teams to implement responsive, industry-specific interfaces.",
+      "Maintained the customer dashboard and design components for a SaaS product in the automotive industry. Responsibilities include dashboard upkeep, bug fixes, and enhancing user experience. I collaborate with design teams to implement responsive, industry-specific interfaces.",
     logo: "/logos/atf-logo.svg",
   },
   // {
@@ -42,7 +42,7 @@ export const workExperiences: WorkExperienceProps[] = [
     companyType: "E-commerce skincare",
     skills: ["TS", "React", "NextJS", "CraftCMS", "GraphQL", "Tailwind"],
     description:
-      "I help develop Routinely's e-commerce storefront and manage its front-end. Responsibilities include translating design mock-ups into fully-responsive products and collaborating with UX designers, product managers, and back-end developers for an optimal user experience.",
+      "Helped develop Routinely's e-commerce storefront and manage its front-end. Responsibilities include translating design mock-ups into fully-responsive products and collaborating with UX designers, product managers, and back-end developers for an optimal user experience.",
     logo: "/logos/routinely-logo.svg",
   },
   {
@@ -52,7 +52,7 @@ export const workExperiences: WorkExperienceProps[] = [
     companyType: "Experience design studio",
     skills: ["AdobeSuite"],
     description:
-      "I lead the cultural translation of fashion and new technology insights into design briefs for internal and client-facing projects, across digital and physical domains. Additionally, I fostered new partnerships with retail industry collaborators.",
+      "Lead the cultural translation of fashion and new technology insights into design briefs for internal and client-facing projects, across digital and physical domains. Additionally, I fostered new partnerships with retail industry collaborators.",
     logo: "/logos/random-logo.svg",
   },
   {
@@ -62,7 +62,7 @@ export const workExperiences: WorkExperienceProps[] = [
     companyType: "IoT",
     skills: ["AdobeSuite", "Diverse research methods"],
     description:
-      "I developed a qualitative research and benchmarking method called Value Tuning. This method uncovers insights on how well a brand meets people's expectations. I provided evidence-based design recommendations to enhance the UX journey for HUE home products.",
+      "Developed a qualitative research and benchmarking method called Value Tuning. This method uncovers insights on how well a brand meets people's expectations. I provided evidence-based design recommendations to enhance the UX journey for HUE home products.",
     logo: "/logos/philips-logo.svg",
   },
 ];
@@ -106,7 +106,7 @@ export const projectsData: Record<string, ProjectItem> = {
     link: "https://mocomuseum.com/",
     category: "Web",
     description:
-      "The MOCO Museum website and ticketing platform: I helped craft a visually rich and user-friendly interface that reflected the museum's innovative spirit. Working with designers, I helped bring the museum's bold concepts to life, optimizing performance, integrating ticketing features, and ensuring an immersive, seamless experience for international visitors.",
+      "The MOCO Museum website and ticketing platform: I help craft a visually rich and user-friendly interface that reflected the museum's innovative spirit. Working with designers, I helped bring the museum's bold concepts to life, optimizing performance, integrating ticketing features, and ensuring an immersive, seamless experience for international visitors.",
     nature: "client work",
   },
   bks: {
@@ -117,7 +117,7 @@ export const projectsData: Record<string, ProjectItem> = {
     link: "https://www.bestkeptsecret.nl/",
     category: "Web",
     description:
-      "I implemented the design of the new pages for the Best Kept Secret music festival website, working closely with the backend team to integrate a new data structure and ensure alignment with updated design requirements. The project involved enhancing the ticketing and reservation platform with dynamic, brand-aligned user interactions.",
+      "I implement the design of the new pages for the Best Kept Secret music festival website, working closely with the backend team to integrate a new data structure and ensure alignment with updated design requirements. The project involved enhancing the ticketing and reservation platform with dynamic, brand-aligned user interactions.",
     nature: "client work",
   },
   unvrs: {
