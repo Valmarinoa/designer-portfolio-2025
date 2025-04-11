@@ -7,11 +7,11 @@ const AboutContent = () => {
     <div className="max-w-[880px] text-black/80 z-50 w-full mt-7 md:mt-0">
       <div className="relative flex flex-col md:flex-row ">
         {/* Floating Image */}
-        <div className=" w-full max-w-[370px] h-full relative overflow-hidden md:mr-6 mb-4 rounded-sm ">
+        <div className=" w-full max-w-[370px] md:w-96 h-full relative overflow-hidden md:mr-6 mb-4 rounded-sm">
           <motion.img
-            src="/media/yo3.png"
+            src="/media/me.png"
             alt="about me"
-            className="w-full h-full object-cover rounded-md"
+            className="w-full h-full object-cover rounded-sm"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, margin: "-100px" }}
@@ -21,8 +21,8 @@ const AboutContent = () => {
           <div className="self-end text-sm pt-3 hidden md:block">
             <div className="font-baskervville-italic flex">
               <div className="text-4xl">*</div>{" "}
-              <span className="pl-4 pt-1">
-                Double nationality: Dutch - Colombian <br />
+              <span className="pl-3 pt-1">
+                Double nationality: Dutch-Colombian <br />
                 EU / LATAM based.
               </span>
             </div>

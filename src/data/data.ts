@@ -209,7 +209,7 @@ export const projectsData: Record<string, ProjectItem> = {
     link: "https://mercury-breaths.netlify.app/",
     category: "Shader",
     description:
-      "Dynamically-generated gradients, that simulate our breathing pace.",
+      "I created this quiet, contemplative piece to explore moments of stillness and calm through technology. It features dynamically generated gradients that simulate our breathing pace.",
     nature: "playground",
   },
 };
