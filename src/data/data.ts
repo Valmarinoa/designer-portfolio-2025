@@ -117,7 +117,7 @@ export const projectsData: Record<string, ProjectItem> = {
     link: "https://www.bestkeptsecret.nl/",
     category: "Web",
     description:
-      "The official site for Best Kept Secret music festival in the Netherlands. It is a ticketing and reservations platform, mixed with fun user interactions alluding to the brand's identity",
+      "I implemented the design of the new pages for the Best Kept Secret music festival website, working closely with the backend team to integrate a new data structure and ensure alignment with updated design requirements. The project involved enhancing the ticketing and reservation platform with dynamic, brand-aligned user interactions.",
     nature: "client work",
   },
   unvrs: {
