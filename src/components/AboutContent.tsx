@@ -9,7 +9,7 @@ const AboutContent = () => {
         {/* Floating Image */}
         <div className=" w-full max-w-[370px] md:w-96 h-full relative overflow-hidden md:mr-6 mb-4 rounded-sm">
           <motion.img
-            src="/media/me.png"
+            src="/media/yo4.png"
             alt="about me"
             className="w-full h-full object-cover rounded-sm"
             initial="hidden"
