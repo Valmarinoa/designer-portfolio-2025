@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { getItemContent } from "@/data/data";
 import { useAtom } from "jotai";
-import { useRouter } from "next/navigation";
 import { selectedProjectAtom, isModalOpenAtom } from "@/store/modalAtom";
 import ProjectModalContent from "./ProjectModalContent";
 import { mediaVariantsBg } from "@/constants/variants";
@@ -12,58 +11,52 @@ import { mediaVariantsBg } from "@/constants/variants";
 const ProjectModal: React.FC = () => {
   const [selectedItem, setSelectedItem] = useAtom(selectedProjectAtom);
   const [isModalOpen, setIsModalOpen] = useAtom(isModalOpenAtom);
-  const router = useRouter();
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     if (isModalOpen) {
+      setIsVisible(true);
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
     }
+
     return () => {
       document.body.style.overflow = "";
     };
   }, [isModalOpen]);
 
-  if (!isModalOpen || !selectedItem) return null;
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-    router.push("/", { scroll: false });
+  const handleClose = () => {
+    setIsVisible(false); // Trigger exit animation
   };
 
+  const handleExitComplete = () => {
+    setIsModalOpen(false); // Actually unmount
+    setSelectedItem(null); // Reset content
+  };
+
+  if (!isModalOpen || !selectedItem) return null;
+
   return (
-    <AnimatePresence
-      mode="wait"
-      onExitComplete={() => {
-        setSelectedItem(null);
-      }}
-    >
-      {isModalOpen && selectedItem && (
+    <AnimatePresence onExitComplete={handleExitComplete}>
+      {isVisible && (
         <motion.div
+          key="modal-wrapper"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{
-            delay: 0.1,
-            duration: 0.4,
-            ease: [0.25, 0.1, 0.25, 1],
-          }}
-          key="project-modal"
-          className="fixed inset-0 h-full backdrop-blur-[80px] z-50 flex items-center justify-center p-4"
-          onClick={closeModal}
+          transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+          className="fixed inset-0 h-full z-50 flex items-center justify-center p-4"
         >
-          {/* Background blur */}
+          {/* Overlay */}
+          <div className="absolute w-full h-full backdrop-blur-[100px] bg-[#f2f2f2]/10 z-10" />
+          {/* Background Blur + Media */}
           <motion.div
+            className="w-screen h-full absolute z-0 backdrop-blur-[80px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{
-              delay: 0.1,
-              duration: 0.4,
-              ease: [0.25, 0.1, 0.25, 1],
-            }}
-            className="w-screen h-full absolute z-0 backdrop-blur-[80px]"
+            transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
           >
             {getItemContent(selectedItem)?.type === "video" ? (
               <motion.video
@@ -72,10 +65,10 @@ const ProjectModal: React.FC = () => {
                 loop
                 muted
                 playsInline
-                className="object-cover w-full h-full scale-150 "
+                className="object-cover w-full h-full scale-150"
                 initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, margin: "0px" }}
+                animate="visible"
+                exit="hidden"
                 variants={mediaVariantsBg}
               />
             ) : (
@@ -84,18 +77,21 @@ const ProjectModal: React.FC = () => {
                 alt={getItemContent(selectedItem)?.alt || ""}
                 className="w-full h-full object-cover scale-150"
                 initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, margin: "0px" }}
+                animate="visible"
+                exit="hidden"
                 variants={mediaVariantsBg}
               />
             )}
           </motion.div>
-          <div className=" absolute w-full h-full backdrop-blur-[100px] bg-[#f2f2f2]/10 z-10"></div>
 
           {/* Close Button */}
-          <button
-            onClick={closeModal}
+          <motion.button
+            onClick={handleClose}
             className="fixed top-4 right-4 border-[1px] border-black/40 w-12 h-12 flex items-center bg-[#f2f2f2]/30 justify-center rounded-full backdrop-blur-[80px] z-10"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -112,10 +108,18 @@ const ProjectModal: React.FC = () => {
               <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
-          </button>
+          </motion.button>
 
           {/* Modal Content */}
-          <ProjectModalContent selectedItem={selectedItem} />
+          <motion.div
+            className="z-20"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 40 }}
+            transition={{ duration: 0.4 }}
+          >
+            <ProjectModalContent selectedItem={selectedItem} />
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>
