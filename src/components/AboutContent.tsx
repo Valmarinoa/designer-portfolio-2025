@@ -32,29 +32,37 @@ const AboutContent = () => {
         {/* Text Content */}
         <div className="flex flex-col gap-3 w-full text-sm">
           <p className="leading-5">
-            I`m a frontend developer from Colombia with a background in art and
-            industrial design; currently based in Amsterdam. My work lives at
-            the intersection of creativity and code—where visual thinking,
-            storytelling, and technology come together to craft digital
-            experiences that feel intuitive, human, and thoughtfully designed.
+            Hi! I’m a frontend developer from Colombia, now based in Amsterdam,
+            with a background in art and industrial design. I love working at
+            the intersection of creativity and code — combining visual thinking,
+            storytelling, and tech — to build digital experiences that feel
+            intuitive, human, and thoughtfully crafted.
             <br /> <br />
             With experience spanning IoT, retail, and healthcare, I’ve
-            contributed to everything from responsive interfaces to interactive
-            platforms. I`m skilled in modern frontend tools like React, Next.js,
-            TypeScript, CSS/Tailwind, and Framer Motion for styling and
-            animation.
+            contributed to everything from sleek, responsive interfaces to
+            interactive platforms. I’m skilled in modern frontend tools like
+            React, Next.js, TypeScript, CSS/Tailwind, and Framer Motion for
+            animations. <br />
+            Beyond just writing code, I like to approach projects with a broader
+            perspective—thinking about the user, the design, and how everything
+            fits together. I’ve been involved in the full product journey:
+            starting with user research, shaping ideas through product design,
+            and now focusing on implementation as a developer. That end-to-end
+            perspective really shapes how I think and work.
             <br /> <br />
-            Fluent in Spanish, English, French, and Portuguese, I thrive in
-            remote, multicultural environments. I`m currently seeking
-            opportunities where I can push the boundaries of frontend
-            development and help build products that are both innovative and
-            deeply human. <br /> <br />
+            Fluent in Spanish, English, French, Portuguese and a good base of
+            Dutch, I thrive in multicultural environments. Right now, I’m
+            looking for new opportunities to grow as a developer and help build
+            things that are not only smart and functional, but also human and
+            impactful.
+            <br /> <br />
             I`m drawn to the challenge of turning ideas into responsive,
             engaging digital experiences. My creative roots give me a strong
-            visual and narrative sensibility, which I bring into every
-            project—whether I’m collaborating with a team or building something
-            on my own. Ultimately, I aim to create work that feels intentional,
-            immersive, and impactful.
+            aesthetic and narrative sensibility, which I bring into every
+            project. Whether I’m teaming up with others or building something on
+            my own, I care about creating digital experiences that feel
+            intentional and immersive — ones that tell a story and actually
+            connect with people.
           </p>
         </div>
       </div>
