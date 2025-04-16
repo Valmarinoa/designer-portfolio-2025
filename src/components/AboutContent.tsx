@@ -43,26 +43,22 @@ const AboutContent = () => {
             interactive platforms. I’m skilled in modern frontend tools like
             React, Next.js, TypeScript, CSS/Tailwind, and Framer Motion for
             animations. <br />
-            Beyond just writing code, I like to approach projects with a broader
-            perspective—thinking about the user, the design, and how everything
-            fits together. I’ve been involved in the full product journey:
-            starting with user research, shaping ideas through product design,
-            and now focusing on implementation as a developer. That end-to-end
-            perspective really shapes how I think and work.
+            Beyond just writing code, my approach is to ensure that user
+            research, design, and development all align seamlessly. That’s why
+            I’ve been involved in the full product journey: starting with user
+            research, shaping ideas through product design, and now focusing on
+            implementation as a developer. <br /> That end-to-end perspective
+            informs how I think, collaborate, and build.
             <br /> <br />
-            Fluent in Spanish, English, French, Portuguese and a good base of
-            Dutch, I thrive in multicultural environments. Right now, I’m
-            looking for new opportunities to grow as a developer and help build
-            things that are not only smart and functional, but also human and
-            impactful.
+            Fluent in Spanish, English, French, Portuguese, and with a solid
+            base in Dutch, I thrive in multicultural environments.
             <br /> <br />
             I`m drawn to the challenge of turning ideas into responsive,
             engaging digital experiences. My creative roots give me a strong
             aesthetic and narrative sensibility, which I bring into every
             project. Whether I’m teaming up with others or building something on
             my own, I care about creating digital experiences that feel
-            intentional and immersive — ones that tell a story and actually
-            connect with people.
+            intentional, that tell a story and actually connect with people.
           </p>
         </div>
       </div>
