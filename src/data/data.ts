@@ -108,6 +108,7 @@ export const projectsData: Record<string, ProjectItem> = {
     description:
       "The MOCO Museum website and ticketing platform: I help craft a visually rich and user-friendly interface that reflected the museum's innovative spirit. Working with designers, I helped bring the museum's bold concepts to life, optimizing performance, integrating ticketing features, and ensuring an immersive, seamless experience for international visitors.",
     nature: "client work",
+    bgColor: "",
   },
   bks: {
     type: "image",
@@ -119,6 +120,7 @@ export const projectsData: Record<string, ProjectItem> = {
     description:
       "I implement the design of the new pages for the Best Kept Secret music festival website, working closely with the backend team to integrate a new data structure and ensure alignment with updated design requirements. The project involved enhancing the ticketing and reservation platform with dynamic, brand-aligned user interactions.",
     nature: "client work",
+    bgColor: "",
   },
   unvrs: {
     type: "image",
@@ -131,6 +133,7 @@ export const projectsData: Record<string, ProjectItem> = {
     description:
       "Together with another frontend developer, we managed to bring UNVRS-Ushuaïa Ibiza's 'Hyperclub' identity to life. Along with backend developers and designers, I helped build the site from scratch, focusing on interactive features, performance optimization, and seamless backend integration.",
     nature: "client work",
+    bgColor: "",
   },
   // brazil: {
   //   type: "image",
@@ -168,6 +171,7 @@ export const projectsData: Record<string, ProjectItem> = {
     description:
       "Interactive texture inspired from the ever-changing landscapes of Lençoes Marenhences in Brazil. ",
     nature: "playground",
+    bgColor: "#98bea2",
   },
   routinely: {
     type: "image",
@@ -180,12 +184,13 @@ export const projectsData: Record<string, ProjectItem> = {
     description:
       "I contributed to building Routinely’s e-commerce skincare platform from scratch. Working with backend developers and designers, developed online skin analysis tests that match users with the right products by integrating data-driven recommendations tailored to their unique needs.",
     nature: "client work",
+    bgColor: "",
   },
   foresta: {
     type: "video",
     src: "/media/foresta/video.mp4",
     title: "Botánica Onírica",
-
+    bgColor: "",
     link: "https://botanica-onirica.netlify.app",
     category: "Shader",
     description:
@@ -201,6 +206,7 @@ export const projectsData: Record<string, ProjectItem> = {
     description:
       "Cumbre is a self-designed and self-developed interactive shader experiment, showcasing real-time 3D visuals with custom textures, environment maps, and distortion effects using images of the jungle which I love.",
     nature: "playground",
+    bgColor: "",
   },
   mercurio: {
     type: "video",
@@ -211,6 +217,7 @@ export const projectsData: Record<string, ProjectItem> = {
     description:
       "I created this quiet, contemplative piece to explore moments of stillness and calm through technology. It features dynamically generated gradients that simulate our breathing pace.",
     nature: "playground",
+    bgColor: "",
   },
 };
 
@@ -224,6 +231,7 @@ export const projectsDataDsk: ProjectItem[] = [
     category: "Web platform",
     description: "",
     nature: "client work",
+    bgColor: "",
   },
   {
     id: "bks",
@@ -235,6 +243,7 @@ export const projectsDataDsk: ProjectItem[] = [
     category: "Web platform",
     description: "",
     nature: "client work",
+    bgColor: "",
   },
   // unvrs 2
   {
@@ -247,8 +256,9 @@ export const projectsDataDsk: ProjectItem[] = [
     category: "Web platform",
     description: "",
     nature: "client work",
+    bgColor: "",
   },
-  // brasil
+
   {
     id: "foresta",
     type: "video",
@@ -258,6 +268,7 @@ export const projectsDataDsk: ProjectItem[] = [
     category: "Shader",
     description: "",
     nature: "playground",
+    bgColor: "",
   },
   {
     id: "caminhos",
@@ -265,11 +276,11 @@ export const projectsDataDsk: ProjectItem[] = [
     src: "/media/caminhos/video.mp4",
     alt: "Caminhos Project",
     title: "Caminhos",
-    // link: "https://abre-caminhos.netlify.app/",
     link: "https://abre-caminhos-react.vercel.app/",
     category: "Shader",
     description: "",
     nature: "playground",
+    bgColor: "",
   },
   {
     id: "cumbre",
@@ -281,6 +292,7 @@ export const projectsDataDsk: ProjectItem[] = [
     description:
       "Cumbre is a self-designed and self-developed interactive shader experiment, showcasing real-time 3D visuals with custom textures, environment maps, and distortion effects using images of the jungle which I love.",
     nature: "playground",
+    bgColor: "",
   },
   {
     id: "mercurio",
@@ -291,6 +303,7 @@ export const projectsDataDsk: ProjectItem[] = [
     category: "Shader",
     description: "",
     nature: "playground",
+    bgColor: "",
   },
   // {
   //   id: "brazil",
@@ -326,6 +339,7 @@ export const projectsDataDsk: ProjectItem[] = [
     category: "Web application | e-commerce",
     description: "",
     nature: "client work",
+    bgColor: "",
   },
   // 8
 

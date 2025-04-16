@@ -50,6 +50,7 @@ export type ProjectItem = {
   category: string;
   description: string;
   nature: string;
+  bgColor: string;
 };
 
 export type MediaItemProps = {

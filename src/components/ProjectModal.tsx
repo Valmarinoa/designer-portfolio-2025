@@ -11,14 +11,13 @@ import { mediaVariantsBg } from "@/constants/variants";
 const ProjectModal: React.FC = () => {
   const [selectedItem, setSelectedItem] = useAtom(selectedProjectAtom);
   const [isModalOpen, setIsModalOpen] = useAtom(isModalOpenAtom);
-  const [isVisible, setIsVisible] = useState(false);
+
+  const [shouldRender, setShouldRender] = useState(false);
 
   useEffect(() => {
     if (isModalOpen) {
-      setIsVisible(true);
+      setShouldRender(true);
       document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
     }
 
     return () => {
@@ -27,36 +26,37 @@ const ProjectModal: React.FC = () => {
   }, [isModalOpen]);
 
   const handleClose = () => {
-    setIsVisible(false); // Trigger exit animation
+    setIsModalOpen(false); // Starts the animation
   };
 
   const handleExitComplete = () => {
-    setIsModalOpen(false); // Actually unmount
-    setSelectedItem(null); // Reset content
+    setSelectedItem(null);
+    setShouldRender(false); // Fully unmount the modal
   };
 
-  if (!isModalOpen || !selectedItem) return null;
+  if (!shouldRender || !selectedItem) return null;
 
   return (
     <AnimatePresence onExitComplete={handleExitComplete}>
-      {isVisible && (
+      {isModalOpen && (
         <motion.div
-          key="modal-wrapper"
+          key="modal"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
-          className="fixed inset-0 h-full z-50 flex items-center justify-center p-4"
+          transition={{ duration: 0.4 }}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4"
         >
           {/* Overlay */}
           <div className="absolute w-full h-full backdrop-blur-[100px] bg-[#f2f2f2]/10 z-10" />
+
           {/* Background Blur + Media */}
           <motion.div
             className="w-screen h-full absolute z-0 backdrop-blur-[80px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.4 }}
           >
             {getItemContent(selectedItem)?.type === "video" ? (
               <motion.video
