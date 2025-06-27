@@ -4,6 +4,7 @@ import "./globals.css";
 import { AnimatePresence } from "framer-motion";
 import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
 import CustomCursor from "@/components/CustomCursor";
+import LanguageProvider from "@/components/providers/LanguageProvider";
 
 const beVietnamPro = Be_Vietnam_Pro({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -38,14 +39,16 @@ export default function RootLayout({
         className={`${beVietnamPro.variable} ${baskervville.variable}`}
       >
         <body className="antialiased items-center bg-[#f2f2f2] selection:bg-[#DBFE87]/80 selection:text-black/90">
-          <ClientLayoutWrapper />
-          <div className="hidden md:block">
-            <CustomCursor />
-          </div>
-          {children}
-          <p className="text-center text-xs fixed bottom-0 left-1/2 -translate-x-1/2 font-baskervville-italic z-50">
-            Coded with love 🩵
-          </p>
+          <LanguageProvider>
+            <ClientLayoutWrapper />
+            <div className="hidden md:block">
+              <CustomCursor />
+            </div>
+            {children}
+            <p className="text-center text-xs fixed bottom-0 left-1/2 -translate-x-1/2 font-baskervville-italic z-50">
+              {/* Translation will go here */}
+            </p>
+          </LanguageProvider>
         </body>
       </html>
     </AnimatePresence>

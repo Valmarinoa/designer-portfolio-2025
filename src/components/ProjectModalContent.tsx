@@ -4,6 +4,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { getItemContent } from "@/data/data";
 import { mediaVariants } from "@/constants/variants";
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+} from "@/components/ui/popover";
 
 interface Props {
   selectedItem: string;
@@ -97,13 +102,26 @@ const ProjectModalContent: React.FC<Props> = ({ selectedItem }) => {
               </div>
             </motion.div>
 
-            <motion.a
-              href={project.link}
-              target="_blank"
-              className="px-10 py-2 mt-1 font-medium border border-black/40 text-xs rounded-full bg-[#f2f2f2]/20 hover:bg-[#f2f2f2]/30 transition-all hover:shadow-md duration-300"
-            >
-              Visit
-            </motion.a>
+            {selectedItem === "cumbre" ? (
+              <Popover>
+                <PopoverTrigger asChild>
+                  <button className="px-10 py-2 mt-1 font-medium border border-black/40 text-xs rounded-full bg-[#f2f2f2]/20 text-black/50">
+                    Visit
+                  </button>
+                </PopoverTrigger>
+                <PopoverContent className="text-xs text-center backdrop-blur-md bg-white/40 border-none rounded-lg p-3 w-fit">
+                  Currently optimising this project, it'll be back soon!
+                </PopoverContent>
+              </Popover>
+            ) : (
+              <motion.a
+                href={project.link}
+                target="_blank"
+                className="px-10 py-2 mt-1 font-medium border border-black/40 text-xs rounded-full bg-[#f2f2f2]/20 hover:bg-[#f2f2f2]/30 transition-all hover:shadow-md duration-300"
+              >
+                Visit
+              </motion.a>
+            )}
           </div>
 
           <motion.div
