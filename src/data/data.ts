@@ -16,7 +16,7 @@ export const workExperiences: WorkExperienceProps[] = [
     logo: "/logos/bravoure-logo.svg",
   },
   {
-    dateRange: "May 2022 - Oct 2023",
+    dateRange: "May 2022 - Aug 2023",
     role: "Frontend Developer",
     company: "Autofill Tech",
     companyType: "AI automobile scanning",
@@ -36,7 +36,7 @@ export const workExperiences: WorkExperienceProps[] = [
   //   logo: "/logos/gumgum-logo.svg",
   // },
   {
-    dateRange: "Oct 2022 - Sept 2023",
+    dateRange: "Sept 2021 - Apr 2022",
     role: "Web Developer",
     company: "Routinely",
     companyType: "E-commerce skincare",
