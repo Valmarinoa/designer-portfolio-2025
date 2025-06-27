@@ -17,7 +17,7 @@ const NavigationNavbar = () => {
         <span className="font-semibold">Valentina</span> Marino
       </Link>
       <div className="relative flex justify-between items-center z-50 w-full">
-        <div className="gap-6 hidden md:flex mb-auto ml-auto">
+        <div className="gap-6 hidden md:flex mb-auto ml-auto items-center">
           <Link href="/about" className="relative flex items-center gap-2 z-50">
             About
           </Link>

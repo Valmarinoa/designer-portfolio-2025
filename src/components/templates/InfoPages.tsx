@@ -28,7 +28,7 @@ const InfoPages = ({ children, title }: InfoPagesTemplateProps) => {
             {title === "CV" && (
               <>
                 <motion.a
-                  href="/CV-Valentina-Marino-FE.pdf"
+                  href="/CV - Valentina Marino.pdf"
                   download
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}

@@ -4,20 +4,17 @@ import React from "react";
 import { MaskText } from "../MaskText";
 import Link from "next/link";
 import SocialsComponent from "../SocialsComponent";
+// import { useTranslation } from "@/hooks/useTranslation";
 
 const DesktopFooter = () => {
+
   const phrases: React.ReactNode[] = [
     <>
-      Hi! I’m an Amsterdam-based frontend developer <br />
-      creating
-      <span className="font-baskervville-italic text-[18px] pl-1">
-        digital
-      </span>{" "}
-      and
-      <span className="font-baskervville-italic px-1 text-[18px]">
-        physical products
+      Hi! I’m a Frontend Developer who loves to build <br />
+      <span className="font-baskervville-italic text-[18px] px-1">
+        interfaces & digital products
       </span>
-      <>that feel alive.</>
+      that feel alive.
     </>,
   ];
 

@@ -32,11 +32,10 @@ const AboutContent = () => {
         {/* Text Content */}
         <div className="flex flex-col gap-3 w-full text-sm">
           <p className="leading-5">
-            Hi! I’m a frontend developer from Colombia, now based in Amsterdam,
-            with a background in art and industrial design. I love working at
-            the intersection of creativity and code — combining visual thinking,
-            storytelling, and tech — to build digital experiences that feel
-            intuitive, human, and thoughtfully crafted.
+            I’m a frontend developer from Colombia, now based in Amsterdam, with
+            a background in art and industrial design. I combine poetry and
+            technology to build digital experiences that feel intuitive, human,
+            and thoughtfully crafted.
             <br /> <br />
             With experience spanning IoT, retail, and healthcare, I’ve
             contributed to everything from sleek, responsive interfaces to

@@ -1,0 +1,13 @@
+{
+  "basics": {
+    "greeting": "Hello!",
+    "footer": "Coded with love <3",
+    "about": "Sobre mí",
+    "cv": "CV"
+  },
+  "footerDsk": {
+    "phrase1": "Hola! Soy desarrolladora Frontend basada en Amsterdam,",
+    "phrase2": "creando productos digitales y físicos",
+    "phrase3":"que se sienten vivos."
+  }
+}
