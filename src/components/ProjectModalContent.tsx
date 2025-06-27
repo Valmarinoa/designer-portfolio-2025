@@ -110,7 +110,7 @@ const ProjectModalContent: React.FC<Props> = ({ selectedItem }) => {
                   </button>
                 </PopoverTrigger>
                 <PopoverContent className="text-xs text-center backdrop-blur-md bg-white/40 border-none rounded-lg p-3 w-fit">
-                  Currently optimising this project, it'll be back soon!
+                  Currently optimising this project, coming soon!
                 </PopoverContent>
               </Popover>
             ) : (
