@@ -135,6 +135,18 @@ export const projectsData: Record<string, ProjectItem> = {
     nature: "client work",
     bgColor: "",
   },
+  valmar: {
+    type: "video",
+    src: "/media/valmar-vid.mp4",
+    alt: "web",
+    title: "Valmar",
+    link: "https://valmar.studio",
+    category: "Design Artesanal",
+    description:
+      "A self-coded and designed portfolio, showcasing some of my hand-made, artistic work. I like to give a stage to my passions and to the things I love. They give a glimpse into my world perspective.",
+    nature: "design work",
+    bgColor: "",
+  },
   // brazil: {
   //   type: "image",
   //   src: "/media/brazil/background.png",
@@ -256,6 +268,20 @@ export const projectsDataDsk: ProjectItem[] = [
     category: "Web platform",
     description: "",
     nature: "client work",
+    bgColor: "",
+  },
+ {
+    id: 'valmar',
+    type: "video",
+    src: "/media/valmar-vid.mp4",
+    alt: "web",
+    title: "VALMAR",
+
+    link: "https://valmar.studio",
+    category: "Design Artesanal",
+    description:
+      "A self-coded and designed portfolio, showcasing some of my hand-made, artistic work. I like to give a stage to my passions and to the things I love. They give a glimpse into my world perspective and sensitivities.",
+    nature: "design work",
     bgColor: "",
   },
 
