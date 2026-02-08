@@ -143,7 +143,7 @@ export const projectsData: Record<string, ProjectItem> = {
     link: "https://valmar.studio",
     category: "Design Artesanal",
     description:
-      "A self-coded and designed portfolio, showcasing some of my hand-made, artistic work. I like to give a stage to my passions and to the things I love. They give a glimpse into my world perspective.",
+      "A self-coded and designed portfolio, showcasing some of my hand-made, artistic work (nothing is AI). I like to give a stage to my passions and to the things I love. They give a glimpse into my world perspective.",
     nature: "design work",
     bgColor: "",
   },
