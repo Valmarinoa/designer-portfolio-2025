@@ -104,7 +104,7 @@ export const projectsData: Record<string, ProjectItem> = {
   carmela: {
     type: "image",
     src: "/media/carmela/background.png",
-    videoSrc: "",
+    videoSrc: "/media/carmela/video.mp4",
     title: "Carmela Collective",
     link: "https://carmelacollective.com/",
     category: "Cultural platform",
@@ -223,9 +223,9 @@ export const projectsDataDsk: ProjectItem[] = [
   },
   {
     id: "carmela",
-    type: "image",
+    type: "video",
     src: "/media/carmela/background.png",
-    videoSrc: "",
+    videoSrc: "/media/carmela/video.mp4",
     title: "Carmela Collective",
     link: "https://carmelacollective.com/",
     category: "Web Cultural platform",
