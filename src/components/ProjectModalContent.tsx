@@ -36,9 +36,9 @@ const ProjectModalContent: React.FC<Props> = ({ selectedItem }) => {
         initial={{ borderRadius: "100px" }}
         animate={{ borderRadius: "12px", transition: { duration: 0.3 } }}
       >
-        {project.type === "video" ? (
+        {project.videoSrc || project.type === "video" ? (
           <motion.video
-            src={project.src || ""}
+            src={project.videoSrc || project.src || ""}
             autoPlay
             loop
             muted
@@ -52,7 +52,7 @@ const ProjectModalContent: React.FC<Props> = ({ selectedItem }) => {
         ) : (
           <motion.img
             src={project.src || ""}
-            alt={project.alt || ""}
+            alt={project.alt || project.title}
             className="w-full h-[260px] rounded-t-sm shadow-md object-cover"
             initial="hidden"
             whileInView="visible"

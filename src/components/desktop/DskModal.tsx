@@ -37,7 +37,6 @@ function DskModal({ mouseModal, projects }: DskModalProps) {
   const cursorLabel = useRef(null);
 
   useEffect(() => {
-    //Move Container
     const xMoveContainer = gsap.quickTo(modalContainer.current, "left", {
       duration: 0.8,
       ease: "power3",
@@ -46,7 +45,6 @@ function DskModal({ mouseModal, projects }: DskModalProps) {
       duration: 0.8,
       ease: "power3",
     });
-    //Move cursor
     const xMoveCursor = gsap.quickTo(cursor.current, "left", {
       duration: 0.5,
       ease: "power3",
@@ -55,7 +53,6 @@ function DskModal({ mouseModal, projects }: DskModalProps) {
       duration: 0.5,
       ease: "power3",
     });
-    //Move cursor label
     const xMoveCursorLabel = gsap.quickTo(cursorLabel.current, "left", {
       duration: 0.45,
       ease: "power3",
@@ -65,7 +62,7 @@ function DskModal({ mouseModal, projects }: DskModalProps) {
       ease: "power3",
     });
 
-    window.addEventListener("mousemove", (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       const { clientX, clientY } = e;
       xMoveContainer(clientX);
       yMoveContainer(clientY);
@@ -73,7 +70,10 @@ function DskModal({ mouseModal, projects }: DskModalProps) {
       yMoveCursor(clientY);
       xMoveCursorLabel(clientX);
       yMoveCursorLabel(clientY);
-    });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   return (
@@ -88,22 +88,14 @@ function DskModal({ mouseModal, projects }: DskModalProps) {
         // modalContainer
       >
         <div
-          style={{
-            top: index * -100 + "%",
-          }}
-          // className="h-full w-full"
+          style={{ top: index * -100 + "%" }}
           className={styles.modalSlider}
         >
           {projects.map((project, index) => (
-            <div
-              key={`modal_${index}`}
-              className={styles.modal}
-              // className="relative h-full flex items-center justify-center "
-              // modal
-            >
-              {project.type === "video" ? (
+            <div key={`modal_${index}`} className={styles.modal}>
+              {project.videoSrc || project.type === "video" ? (
                 <video
-                  src={project.src || undefined}
+                  src={project.videoSrc || project.src || undefined}
                   autoPlay
                   loop
                   muted
@@ -115,7 +107,7 @@ function DskModal({ mouseModal, projects }: DskModalProps) {
                   src={project.src || ""}
                   height={120}
                   width={160}
-                  alt={""}
+                  alt={project.alt || project.title}
                   className="w-full h-full object-cover"
                 />
               )}

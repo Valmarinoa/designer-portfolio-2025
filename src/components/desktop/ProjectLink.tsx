@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import { blur } from "@/constants/variants";
 import { getChars } from "@/utils/getChars";
-// import { useRouter } from "next/navigation";
-
 import { useSetAtom } from "jotai";
 import { selectedProjectAtom, isModalOpenAtom } from "@/store/modalAtom";
 
@@ -35,7 +33,6 @@ export default function ProjectLink({
 }: ProjectLinkProps) {
   const setSelectedProject = useSetAtom(selectedProjectAtom);
   const setIsModalOpen = useSetAtom(isModalOpenAtom);
-  // const router = useRouter();
 
   return (
     <div
@@ -43,7 +40,6 @@ export default function ProjectLink({
       onClick={() => {
         setSelectedProject(projectId);
         setIsModalOpen(true);
-        // router.push(`?project=${projectId}`, { scroll: false });
       }}
     >
       <motion.div

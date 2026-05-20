@@ -3,13 +3,15 @@
 @tailwind utilities;
 
 /* Set BeVietnamPro as the default font */
-* {
-  cursor: none !important;
-}
-
 body {
   font-family: var(--font-beVietnamPro), sans-serif;
-  cursor: none !important;
+}
+
+/* Hide native cursor only on desktop where the custom cursor is shown */
+@media (min-width: 768px) {
+  * {
+    cursor: none !important;
+  }
 }
 
 /* Apply Baskervville only where needed */

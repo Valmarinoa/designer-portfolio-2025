@@ -45,6 +45,8 @@ export type ProjectItem = {
   type: "video" | "image";
   src: string | null;
   alt?: string;
+  /** Optional video path — used in both the hover preview and the modal content when a video exists alongside a static image */
+  videoSrc?: string;
   link: string;
   title: string;
   category: string;
@@ -55,8 +57,8 @@ export type ProjectItem = {
 
 export type MediaItemProps = {
   type: "video" | "image";
-  classNameContainer: "string";
-  classNameMedia: "string";
+  classNameContainer: string;
+  classNameMedia: string;
   src: string;
   alt?: string;
   layoutId: string;

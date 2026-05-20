@@ -4,7 +4,6 @@ import React from "react";
 import { MaskText } from "../MaskText";
 import Link from "next/link";
 import SocialsComponent from "../SocialsComponent";
-// import { useTranslation } from "@/hooks/useTranslation";
 
 const DesktopFooter = () => {
 

@@ -25,16 +25,6 @@ export const workExperiences: WorkExperienceProps[] = [
       "Maintained the customer dashboard and design components for a SaaS product in the automotive industry. Responsibilities include dashboard upkeep, bug fixes, and enhancing user experience. I collaborate with design teams to implement responsive, industry-specific interfaces.",
     logo: "/logos/atf-logo.svg",
   },
-  // {
-  //   dateRange: "May 2022 - Oct 2022",
-  //   role: "Creative Developer",
-  //   company: "GumGum",
-  //   companyType: "Digital advertising",
-  //   skills: ["HTML", "CSS", "JS", "AdobeSuite"],
-  //   description:
-  //     "I create dynamic, interactive ads from premium international brand briefings, handling everything from concept to final build. I also turn client requests into visually appealing, responsive, and engaging advertisements. This involves blending client needs with creative flair to deliver impactful advertising solutions.",
-  //   logo: "/logos/gumgum-logo.svg",
-  // },
   {
     dateRange: "Sept 2021 - Apr 2022",
     role: "Web Developer",
@@ -71,7 +61,7 @@ export const educationExperiences: EducationExperienceProps[] = [
   {
     dateRange: "Jan 2021 - Jul 2021",
     school: "Digital Society School",
-    degree: "Digtal Transformation",
+    degree: "Digital Transformation",
     format: "Traineeship",
     place: "Amsterdam, NL",
   },
@@ -102,11 +92,24 @@ export const projectsData: Record<string, ProjectItem> = {
   moco: {
     type: "image",
     src: "/media/moco/background.png",
+    videoSrc: "",
     title: "MOCO Museum",
     link: "https://mocomuseum.com/",
     category: "Web",
     description:
       "The MOCO Museum website and ticketing platform: I help craft a visually rich and user-friendly interface that reflected the museum's innovative spirit. Working with designers, I helped bring the museum's bold concepts to life, optimizing performance, integrating ticketing features, and ensuring an immersive, seamless experience for international visitors.",
+    nature: "client work",
+    bgColor: "",
+  },
+  carmela: {
+    type: "image",
+    src: "/media/carmela/background.png",
+    videoSrc: "",
+    title: "Carmela Collective",
+    link: "https://carmelacollective.com/",
+    category: "Cultural platform",
+    description:
+      "Carmela Collective is a Latin American cultural platform based in the Netherlands. I designed the visual identity and built the entire digital ecosystem.",
     nature: "client work",
     bgColor: "",
   },
@@ -127,7 +130,6 @@ export const projectsData: Record<string, ProjectItem> = {
     src: "/media/unvrs/background.png",
     alt: "web",
     title: "UNVRS",
-
     link: "https://www.unvrs.com/",
     category: "Web",
     description:
@@ -147,32 +149,6 @@ export const projectsData: Record<string, ProjectItem> = {
     nature: "design work",
     bgColor: "",
   },
-  // brazil: {
-  //   type: "image",
-  //   src: "/media/brazil/background.png",
-  //   alt: "Brazil Project",
-  //   title: "Brazil Mood",
-
-  //   link: "https://brazilmood.netlify.app/",
-  //   category: "Web",
-  //   description:
-  //     "Inspired by Luna Bastos' intricate beadwork, I've created playful cursor interactions that transform an image into a 4x6 puzzle.",
-  //   nature: "playground",
-  // },
-
-  // vignettes: {
-  //   type: "image",
-  //   src: "/media/vignettes/background.png",
-  //   alt: "Vignettes Project",
-  //   title: "Vignettes",
-
-  //   link: "https://amazonia-tones.vercel.app/",
-  //   category: "Web",
-
-  //   description:
-  //     " A split image animation using clip-path css value, animated with framer motion and Nextjs. Inspired by: https://tux.co/en/ and Olivier Larose. All images by photographer Gleeson Paulino",
-  //   nature: "playground",
-  // },
   caminhos: {
     type: "video",
     src: "/media/caminhos/video.mp4",
@@ -181,20 +157,19 @@ export const projectsData: Record<string, ProjectItem> = {
     link: "https://abre-caminhos-react.vercel.app/",
     category: "Shader",
     description:
-      "Interactive texture inspired from the ever-changing landscapes of Lençoes Marenhences in Brazil. ",
+      "Interactive texture inspired from the ever-changing landscapes of Lençoes Marenhences in Brazil.",
     nature: "playground",
     bgColor: "#98bea2",
   },
   routinely: {
     type: "image",
     src: "/media/routinely/background.png",
-    alt: "Rputinely Skincare",
+    alt: "Routinely Skincare",
     title: "Routinely",
-
     link: "https://www.routinely.com/en",
     category: "Web",
     description:
-      "I contributed to building Routinely’s e-commerce skincare platform from scratch. Working with backend developers and designers, developed online skin analysis tests that match users with the right products by integrating data-driven recommendations tailored to their unique needs.",
+      "I contributed to building Routinely's e-commerce skincare platform from scratch. Working with backend developers and designers, developed online skin analysis tests that match users with the right products by integrating data-driven recommendations tailored to their unique needs.",
     nature: "client work",
     bgColor: "",
   },
@@ -202,12 +177,12 @@ export const projectsData: Record<string, ProjectItem> = {
     type: "video",
     src: "/media/foresta/video.mp4",
     title: "Botánica Onírica",
-    bgColor: "",
     link: "https://botanica-onirica.netlify.app",
     category: "Shader",
     description:
       "In this project, I used shaders to distort and transform my floral images while keeping their aspect ratio intact. Combining these effects with nature creates a unique contrast between organic forms and digital manipulation, turning natural elements into surreal, dreamlike visuals.",
     nature: "playground",
+    bgColor: "",
   },
   cumbre: {
     type: "video",
@@ -238,10 +213,24 @@ export const projectsDataDsk: ProjectItem[] = [
     id: "moco",
     type: "image",
     src: "/media/moco/background.png",
+    videoSrc: "",
     title: "MOCO Museum",
     link: "https://mocomuseum.com/",
     category: "Web platform",
     description: "",
+    nature: "client work",
+    bgColor: "",
+  },
+  {
+    id: "carmela",
+    type: "image",
+    src: "/media/carmela/background.png",
+    videoSrc: "",
+    title: "Carmela Collective",
+    link: "https://carmelacollective.com/",
+    category: "Web Cultural platform",
+    description:
+      "Carmela Collective is a Latin American cultural platform based in the Netherlands. I designed the visual identity and built the entire digital ecosystem.",
     nature: "client work",
     bgColor: "",
   },
@@ -257,7 +246,6 @@ export const projectsDataDsk: ProjectItem[] = [
     nature: "client work",
     bgColor: "",
   },
-  // unvrs 2
   {
     id: "unvrs",
     type: "image",
@@ -270,13 +258,12 @@ export const projectsDataDsk: ProjectItem[] = [
     nature: "client work",
     bgColor: "",
   },
- {
-    id: 'valmar',
+  {
+    id: "valmar",
     type: "video",
     src: "/media/valmar-vid.mp4",
     alt: "web",
     title: "VALMAR",
-
     link: "https://valmar.studio",
     category: "Design Artesanal",
     description:
@@ -284,7 +271,6 @@ export const projectsDataDsk: ProjectItem[] = [
     nature: "design work",
     bgColor: "",
   },
-
   {
     id: "foresta",
     type: "video",
@@ -331,45 +317,18 @@ export const projectsDataDsk: ProjectItem[] = [
     nature: "playground",
     bgColor: "",
   },
-  // {
-  //   id: "brazil",
-  //   type: "image",
-  //   src: "/media/brazil/background.png",
-  //   alt: "Brazil Project",
-  //   title: "Brazil Mood",
-  //   link: "https://brazilmood.netlify.app/",
-  //   category: "Web",
-  //   description: "",
-  //   nature: "playground",
-  // },
-
-  // {
-  //   id: "vignettes",
-  //   type: "image",
-  //   src: "/media/vignettes/background.png",
-  //   alt: "Vignettes Project",
-  //   title: "Vignettes",
-  //   link: "",
-  //   category: "Web",
-  //   description: "",
-  //   nature: "playground",
-  // },
-
   {
     id: "routinely",
     type: "image",
     src: "/media/routinely/background.png",
-    alt: "routinely Skincare",
-    link: "https://www.routinely.com/en",
+    alt: "Routinely Skincare",
     title: "Routinely",
+    link: "https://www.routinely.com/en",
     category: "Web application | e-commerce",
     description: "",
     nature: "client work",
     bgColor: "",
   },
-  // 8
-
-  // 9
 ];
 
 export const getItemContent = (id: string): ProjectItem | undefined => {
