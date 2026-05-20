@@ -6,7 +6,17 @@ import {
 
 export const workExperiences: WorkExperienceProps[] = [
   {
-    dateRange: "Sept 2023 - Present",
+    dateRange: "Sept 2025 - Present",
+    role: "Product Developer & UI|UX Engineer",
+    company: "",
+    companyType: "Freelancer",
+    skills: ["TS", "React", "NextJS", "CraftCMS", "GraphQL", "Tailwind"],
+    description:
+      "",
+    logo: "",
+  },
+  {
+    dateRange: "Sept 2023 - Sept 2025",
     role: "Frontend Developer",
     company: "Bravoure",
     companyType: "Digital Agency",
