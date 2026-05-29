@@ -7,7 +7,7 @@ import {
 export const workExperiences: WorkExperienceProps[] = [
   {
     dateRange: "Sept 2025 - Present",
-    role: "Product Developer & UI|UX Engineer",
+    role: "Design Engineering | Experience Strategist",
     company: "",
     companyType: "Freelancer",
     skills: ["TS", "React", "NextJS", "CraftCMS", "GraphQL", "Tailwind"],
