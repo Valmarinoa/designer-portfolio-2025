@@ -119,7 +119,7 @@ export const projectsData: Record<string, ProjectItem> = {
     link: "https://carmelacollective.com/",
     category: "Cultural platform",
     description:
-      "Carmela Collective is a Latin American cultural platform based in the Netherlands. I designed the visual identity and built the entire digital ecosystem.",
+      "Carmela Collective is a Latin American cultural platform based in the Netherlands. I lead, develop and design the entire digital ecosystem, from digital strategy, visual identity,to the platform implementation.",
     nature: "client work",
     bgColor: "",
   },
@@ -240,8 +240,8 @@ export const projectsDataDsk: ProjectItem[] = [
     link: "https://carmelacollective.com/",
     category: "Web Cultural platform",
     description:
-      "Carmela Collective is a Latin American cultural platform based in the Netherlands. I designed the visual identity and built the entire digital ecosystem.",
-    nature: "client work",
+    "Carmela Collective is a Latin American cultural platform based in the Netherlands. I lead, develop and design the entire digital ecosystem, from digital strategy, visual identity,to the platform implementation.",
+   nature: "client work",
     bgColor: "",
   },
   {
