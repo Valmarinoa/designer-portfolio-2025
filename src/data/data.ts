@@ -6,14 +6,24 @@ import {
 
 export const workExperiences: WorkExperienceProps[] = [
   {
-    dateRange: "Sept 2025 - Present",
+    dateRange: "Present",
     role: "Design Engineering | Experience Strategist",
     company: "",
     companyType: "Freelancer",
     skills: ["TS", "React", "NextJS", "CraftCMS", "GraphQL", "Tailwind"],
     description:
-      "",
+      "Digital strategy and web advisory for a Belgian community platform. Bridging brand positioning and technical implementation.",
     logo: "",
+  },
+  {
+    dateRange: "Sept 2025 - Present",
+    role: "Creative Director & Experience Strategist",
+    company: "Carmela Collective",
+    companyType: "Co-Founder",
+    skills: ["TS", "React", "NextJS", "CraftCMS", "GraphQL", "Tailwind"],
+    description:
+      "Built and maintain the full platform: Next.js, multilingual architecture, event and media management. A living cultural infrastructure for the Latin American community in Amsterdam.",
+    logo: "/logos/carmela-logo.svg",
   },
   {
     dateRange: "Sept 2023 - Sept 2025",
@@ -22,7 +32,7 @@ export const workExperiences: WorkExperienceProps[] = [
     companyType: "Digital Agency",
     skills: ["TS", "React", "NextJS", "CraftCMS", "GraphQL", "Tailwind"],
     description:
-      "Responsible for building, maintaining, and expanding web applications from the ground up for a diverse clients & products, ranging from developing schooling platforms, music festival websites, to media streaming platforms. I focus on: translating codebases from JS into TS, enhancing user interfaces, optimizing performance, and ensuring seamless integration with backend, while collaborating with the design teams to scale the platform.",
+      "TypeScript, React, design systems. Retail and brand interfaces for Dutch and international clients.",
     logo: "/logos/bravoure-logo.svg",
   },
   {
@@ -61,8 +71,7 @@ export const workExperiences: WorkExperienceProps[] = [
     company: "Philips - Signify",
     companyType: "IoT",
     skills: ["AdobeSuite", "Diverse research methods"],
-    description:
-      "Developed a qualitative research and benchmarking method called Value Tuning. This method uncovers insights on how well a brand meets people's expectations. I provided evidence-based design recommendations to enhance the UX journey for HUE home products.",
+    description:'Qualitative research in IoT and smart lighting. Developed the Value Tuning methodology: a framework for diagnosing the gap between brand promise and product experience.',
     logo: "/logos/philips-logo.svg",
   },
 ];

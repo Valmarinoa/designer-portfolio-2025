@@ -32,32 +32,38 @@ const AboutContent = () => {
         {/* Text Content */}
         <div className="flex flex-col gap-3 w-full text-sm">
           <p className="leading-5">
-            I’m a frontend developer from Colombia, now based in Amsterdam, with
-            a background in art and industrial design. I combine poetry and
-            technology to build digital experiences that feel intuitive, human,
-            and thoughtfully crafted.
-            <br /> <br />
-            With experience spanning IoT, retail, and healthcare, I’ve
-            contributed to everything from sleek, responsive interfaces to
-            interactive platforms. I’m skilled in modern frontend tools like
-            React, Next.js, TypeScript, CSS/Tailwind, and Framer Motion for
-            animations. <br />
-            Beyond just writing code, my approach is to ensure that user
-            research, design, and development all align seamlessly. That’s why
-            I’ve been involved in the full product journey: starting with user
-            research, shaping ideas through product design, and now focusing on
-            implementation as a developer. <br /> That end-to-end perspective
-            informs how I think, collaborate, and build.
-            <br /> <br />
+          Born in Colombia, shaped in France, rooted for over a decade in Amsterdam. I studied art and industrial design on a Rare Talents scholarship in the Netherlands, which taught me to move between the poetic and the functional.
+          <br /> <br />
+My practice follows a natural arc: research → concept → design → code. I move organically between sensory brand research, experience design, physical installations, and frontend development. That range allows me to hold widely diverse perspectives together, and shape work that feels layered and alive.
+<br /> <br />
+At Signify/Philips, I developed{" "}
+            <a
+              href="https://www.valmar.studio/value-tuning"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 decoration-black/30 hover:decoration-black/60 transition-colors"
+            >
+              Value Tuning
+            </a>
+            : a qualitative methodology that decodes how products communicate brand value through touch, sound, weight, and material - giving design teams evidence to advocate for quality, and naming the gap between what a brand promises and what a person actually feels holding it.
+<br /> <br />
+Over the past five years I've built digital products as a developer and UI/UX engineer across IoT, retail, and cultural institutions. What I love the most is shaping interfaces that respond to human intention as much as to data; digital environments that carry emotional and cultural meaning, not just information.
+<br /> <br />
+More recently I've taken an independent path. I partner with teams to reimagine where identity and technology meet. I recently co-founded{" "}
+            <a
+              href="https://www.carmelacollective.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 decoration-black/30 hover:decoration-black/60 transition-colors"
+            >
+              Carmela Collective
+            </a>{" "}
+            (a Latin American cultural platform in Amsterdam) which I’m building from the ground up. In parallel, I’m also leading Qommunity’s web strategy and entire digital presence.
+<br /> <br />
+
             Fluent in Spanish, English, French, Portuguese, and with a solid
             base in Dutch, I thrive in multicultural environments.
-            <br /> <br />
-            I`m drawn to the challenge of turning ideas into responsive,
-            engaging digital experiences. My creative roots give me a strong
-            aesthetic and narrative sensibility, which I bring into every
-            project. Whether I’m teaming up with others or building something on
-            my own, I care about creating digital experiences that feel
-            intentional, that tell a story and actually connect with people.
+           
           </p>
         </div>
       </div>
