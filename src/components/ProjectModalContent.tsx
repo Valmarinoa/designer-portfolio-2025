@@ -46,7 +46,7 @@ const ProjectModalContent: React.FC<Props> = ({ selectedItem }) => {
             className="w-full h-[260px] rounded-t-sm shadow-md object-cover"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, margin: "-100px" }}
+            viewport={{ once: true, margin: "-100px" }}
             variants={mediaVariants}
           />
         ) : (
@@ -56,7 +56,7 @@ const ProjectModalContent: React.FC<Props> = ({ selectedItem }) => {
             className="w-full h-[260px] rounded-t-sm shadow-md object-cover"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, margin: "-100px" }}
+            viewport={{ once: true, margin: "-100px" }}
             variants={mediaVariants}
           />
         )}

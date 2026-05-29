@@ -86,6 +86,8 @@ const ProjectModal: React.FC = () => {
 
           {/* Close Button */}
           <motion.button
+            type="button"
+            aria-label="Close project"
             onClick={handleClose}
             className="fixed top-4 right-4 border-[1px] border-black/40 w-12 h-12 flex items-center bg-[#f2f2f2]/30 justify-center rounded-full backdrop-blur-[80px] z-10"
             initial={{ opacity: 0 }}

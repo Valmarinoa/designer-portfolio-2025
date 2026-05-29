@@ -2,15 +2,9 @@
 
 import React from "react";
 import MobileLandingPage from "./MobileLandingPage";
-import ProjectModal from "@/components/ProjectModal";
 
 const MobileLandingContainer = () => {
-  return (
-    <>
-      <MobileLandingPage />
-      <ProjectModal />
-    </>
-  );
+  return <MobileLandingPage />;
 };
 
 export default MobileLandingContainer;

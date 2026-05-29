@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Be_Vietnam_Pro, Baskervville } from "next/font/google";
 import "./globals.css";
-import { AnimatePresence } from "framer-motion";
 import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
 import CustomCursor from "@/components/CustomCursor";
+import AppProviders from "@/components/providers/AppProviders";
 
 const beVietnamPro = Be_Vietnam_Pro({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "600"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",
@@ -21,9 +21,24 @@ const baskervville = Baskervville({
   variable: "--font-baskervville",
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://valentinamarino.dev";
+
 export const metadata: Metadata = {
-  title: "Val's - Dev Portfolio",
-  description: "Valentina Marino - Frontend Developer Portfolio",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Valentina Marino — Frontend Developer",
+    template: "%s | Valentina Marino",
+  },
+  description:
+    "Amsterdam-based frontend developer portfolio — client work, playground experiments, and CV.",
+  openGraph: {
+    title: "Valentina Marino — Frontend Developer",
+    description:
+      "Amsterdam-based frontend developer portfolio — client work, playground experiments, and CV.",
+    type: "website",
+    locale: "en_US",
+  },
 };
 
 export default function RootLayout({
@@ -32,12 +47,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <AnimatePresence mode="wait">
-      <html
-        lang="en"
-        className={`${beVietnamPro.variable} ${baskervville.variable}`}
-      >
-        <body className="antialiased items-center bg-[#f2f2f2] selection:bg-[#DBFE87]/80 selection:text-black/90">
+    <html
+      lang="en"
+      className={`${beVietnamPro.variable} ${baskervville.variable}`}
+    >
+      <body className="antialiased items-center bg-[#f2f2f2] selection:bg-[#DBFE87]/80 selection:text-black/90">
+        <AppProviders>
           <ClientLayoutWrapper />
           <div className="hidden md:block">
             <CustomCursor />
@@ -46,8 +61,8 @@ export default function RootLayout({
           <p className="text-center text-xs fixed bottom-0 left-1/2 -translate-x-1/2 font-baskervville-italic z-50">
             Coded with love 🩵
           </p>
-        </body>
-      </html>
-    </AnimatePresence>
+        </AppProviders>
+      </body>
+    </html>
   );
 }

@@ -14,7 +14,7 @@ const AboutContent = () => {
             className="w-full h-full object-cover rounded-sm"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, margin: "-100px" }}
+            viewport={{ once: true, margin: "-100px" }}
             variants={mediaVariants}
           />
 
