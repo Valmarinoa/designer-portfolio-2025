@@ -23,7 +23,7 @@ const AboutContent = () => {
               <div className="text-4xl">*</div>{" "}
               <span className="pl-3 pt-1">
                 Double nationality: Dutch-Colombian <br />
-                EU / LATAM based.
+                Amsterdam / EU
               </span>
             </div>
           </div>

@@ -26,7 +26,7 @@ const DesktopFooter = () => {
       <SocialsComponent hasPhoneNumber={false} color="black" delay={1} />
 
       <div className="self-end text-base">
-        <span className="font-baskervville-italic">EU / LATAM </span>based.
+        <span className="font-baskervville-italic">Amsterdam / EU </span>based.
       </div>
     </div>
   );
