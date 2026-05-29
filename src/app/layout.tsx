@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Be_Vietnam_Pro, Baskervville } from "next/font/google";
 import "./globals.css";
 import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
-import CustomCursor from "@/components/CustomCursor";
 import AppProviders from "@/components/providers/AppProviders";
 
 const beVietnamPro = Be_Vietnam_Pro({
@@ -54,9 +53,6 @@ export default function RootLayout({
       <body className="antialiased items-center bg-[#f2f2f2] selection:bg-[#DBFE87]/80 selection:text-black/90">
         <AppProviders>
           <ClientLayoutWrapper />
-          <div className="hidden md:block">
-            <CustomCursor />
-          </div>
           {children}
           <p className="text-center text-xs fixed bottom-0 left-1/2 -translate-x-1/2 font-baskervville-italic z-50">
             Coded with love 🩵

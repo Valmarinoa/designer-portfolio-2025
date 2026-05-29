@@ -18,13 +18,6 @@ body {
   font-family: var(--font-beVietnamPro), sans-serif;
 }
 
-/* Hide native cursor only on desktop where the custom cursor is shown */
-@media (min-width: 768px) {
-  * {
-    cursor: none !important;
-  }
-}
-
 /* Apply Baskervville only where needed */
 .font-baskervville {
   font-family: var(--font-baskervville), serif;
