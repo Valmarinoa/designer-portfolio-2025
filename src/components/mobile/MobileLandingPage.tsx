@@ -15,7 +15,7 @@ import Link from "next/link";
 const MobileLandingPage = () => {
   const phrases: React.ReactNode[] = [
     "Hi! I’m an",
-    " Amsterdam-based frontend developer",
+    " Amsterdam-based Desgin Engineer, Experience Strategist and Frontend Developer",
     <>
       creating{" "}
       <span className="font-baskervville-italic text-[39px]">digital</span> and{" "}
