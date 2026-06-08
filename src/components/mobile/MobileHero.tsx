@@ -87,7 +87,7 @@ const MobileHero = () => {
           {getCharsDelayed("Frontend Developer", 1.1, 0.02)}
         </p>
         <p className="leading-5">{getCharsDelayed("Artisan", 1.5, 0.02)}</p>
-        <p className="leading-5">{getCharsDelayed("Polyglot", 1.5, 0.02)}</p>
+        <p className="leading-5">{getCharsDelayed("Design Engineer", 1.5, 0.02)}</p>
       </motion.div>
 
       {/* Floating Blobs with Parallax + Smooth Appearance */}
