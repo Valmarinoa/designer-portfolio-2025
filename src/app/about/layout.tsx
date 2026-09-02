@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About Valentina Marino — frontend developer with a background in art and industrial design, based in Amsterdam.",
+    "About Valentina Marino — Design Engineer & Experience Strategist with a background in art and industrial design, based in Amsterdam.",
 };
 
 export default function AboutLayout({

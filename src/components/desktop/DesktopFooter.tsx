@@ -9,7 +9,7 @@ const DesktopFooter = () => {
 
   const phrases: React.ReactNode[] = [
     <>
-      Hi! I’m a Frontend Developer who loves to build <br />
+      Hi! I’m a Design Engineer and Experience Strategist who loves to build <br />
       <span className="font-baskervville-italic text-[18px] px-1">
         interfaces & digital products
       </span>

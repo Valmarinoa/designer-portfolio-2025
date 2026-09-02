@@ -27,7 +27,7 @@ export const workExperiences: WorkExperienceProps[] = [
   },
   {
     dateRange: "Sept 2023 - Sept 2025",
-    role: "Frontend Developer",
+    role: "React Frontend Developer",
     company: "Bravoure",
     companyType: "Digital Agency",
     skills: ["TS", "React", "NextJS", "CraftCMS", "GraphQL", "Tailwind"],
@@ -37,7 +37,7 @@ export const workExperiences: WorkExperienceProps[] = [
   },
   {
     dateRange: "May 2022 - Aug 2023",
-    role: "Frontend Developer",
+    role: "React Frontend Developer",
     company: "Autofill Tech",
     companyType: "AI automobile scanning",
     skills: ["React", "TS", "NextJS", "Git"],
