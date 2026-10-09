@@ -20,6 +20,10 @@ export type Skill =
   | "JS"
   | "AdobeSuite"
   | "Git"
+  | "Agentic AI"
+  | "Cursor"
+  | "Copilot"
+  | "Webflow"
   | "Diverse research methods";
 
 export type WorkExperienceProps = {

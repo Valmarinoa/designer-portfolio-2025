@@ -7,20 +7,20 @@ import {
 export const workExperiences: WorkExperienceProps[] = [
   {
     dateRange: "Present",
-    role: "Design Engineering | Experience Strategist",
+    role: "Product & Design Engineer | Experience Strategist",
     company: "",
     companyType: "Freelancer",
-    skills: ["TS", "React", "NextJS", "CraftCMS", "GraphQL", "Tailwind"],
+    skills: ["TS", "React", "NextJS", "CraftCMS", "GraphQL", "Tailwind", "Agentic AI", "Cursor", "Copilot", "Webflow"],
     description:
       "Digital strategy and web advisory for a Belgian community platform. Bridging brand positioning and technical implementation.",
     logo: "",
   },
   {
     dateRange: "Sept 2025 - Present",
-    role: "Creative Director & Experience Strategist",
+    role: "Founding Engineer & Creative Director",
     company: "Carmela Collective",
     companyType: "Co-Founder",
-    skills: ["TS", "React", "NextJS", "CraftCMS", "GraphQL", "Tailwind"],
+    skills: ["TS", "React", "NextJS", "CraftCMS", "GraphQL", "Tailwind", "Agentic AI", "Cursor", "Copilot"],
     description:
       "Built and maintain the full platform: Next.js, multilingual architecture, event and media management. A living cultural infrastructure for the Latin American community in Amsterdam.",
     logo: "/logos/carmela-logo.svg",

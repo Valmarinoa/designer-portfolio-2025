@@ -26,15 +26,15 @@ const siteUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Valentina Marino — Design Engineer",
+    default: "Valentina Marino — Product & Design Engineer",
     template: "%s | Valentina Marino",
   },
   description:
-    "Amsterdam-based Design Engineer portfolio — client work, playground experiments, and CV.",
+    "Amsterdam-based Product & Design Engineer portfolio — client work, playground experiments, and CV.",
   openGraph: {
-    title: "Valentina Marino — Design Engineer",
+    title: "Valentina Marino — Product & Design Engineer",
     description:
-      "Amsterdam-based Design Engineer portfolio — client work, playground experiments, and CV.",
+      "Amsterdam-based Product & Design Engineer portfolio — client work, playground experiments, and CV.",
     type: "website",
     locale: "en_US",
   },
