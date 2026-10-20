@@ -10,7 +10,7 @@ const DesktopFooter = () => {
 
   const phrases: React.ReactNode[] = [
     <>
-      Hi! I’m a Frontend Developer who loves to build <br />
+      Hi! I’m a Design Engineer & Front-End Developer who loves to build <br />
       <span className="font-baskervville-italic text-[18px] px-1">
         interfaces & digital products
       </span>
@@ -26,9 +26,9 @@ const DesktopFooter = () => {
 
       <SocialsComponent hasPhoneNumber={false} color="black" delay={1} />
 
-      <div className="self-end text-base">
+      {/* <div className="self-end text-base">
         <span className="font-baskervville-italic">EU / LATAM </span>based.
-      </div>
+      </div> */}
     </div>
   );
 };
